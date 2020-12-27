@@ -42,7 +42,7 @@
                 <input type="text" name="donation-amount"
                     onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))"
                     placeholder="50.00">
-                <button id="donate-button">Donate Now</button>
+                <button type="submit" id="donate-button">Donate Now</button>
             </div>
         </div>
     </section>
@@ -158,7 +158,19 @@
                 with inquiries</p>
         </div>
     </main>
-    <script src="./scripts/script.js " async defer></script>
+
+    <footer>
+        <div class="footer-content">
+            <p>&#169;2021, Hernando Reptile and Exotics Rescue, Inc.</p>
+            <a href="https://www.instagram.com/hernandoreptileandexotics/" target="_blank"><i
+                    class="fab fa-instagram"></i> Follow us on Instagram</a>
+            <a href="https://www.facebook.com/hernandoreptile" target="_blank"><i class="fab fa-facebook-square"></i>
+                Follow us on Facebook</a>
+            <a href="https://www.youtube.com/channel/UCcIuKZOR07foUfwvnL_MDzA?fbclid=IwAR2riOWwESTRoh7TATy6fdxgIgWnSrhvhz9MTK-3c0ZRBuHR1S65fXAsTSY"
+                target="_blank"><i class="fab fa-youtube"></i> Subscribe to our YouTube Channel</a>
+        </div>
+    </footer>
+    <script src="../scripts/script.js " async defer></script>
 </body>
 
 </html>
