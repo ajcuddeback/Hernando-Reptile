@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hernando Reptile</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="../images/logo.png" alt="Hernando Reptile Logo">
+        </div>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="./sub-pages/donation.html">Donate</a></li>
+                <li><a href="./sub-pages/adoptables.html">Adoptables</a></li>
+                <li><a href="./sub-pages/volunteer.html">Volunteer</a></li>
+                <li><a href="./sub-pages/contact.html">Contact Us</a></li>
+                <li><a href="./sub-pages/PIT-micro.html">PIT Microchiping</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="donation-hero">
+        <div class="donation-hero-content">
+            <h1>Donate to the Rescue</h1>
+            <p>Your donation will help us provide intake, rehabilitation and find forever homes for reptiles,
+                amphibians and exotic non-native animals! Every penny makes a difference!</p>
+            <div class="donation-form">
+                <h2>Enter your donation</h2>
+                <input type="text" name="donation-amount"
+                    onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))"
+                    placeholder="50.00">
+                <button id="donate-button">Donate Now</button>
+            </div>
+        </div>
+    </section>
+    <script src="./scripts/script.js " async defer></script>
+</body>
+
+</html>
