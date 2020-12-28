@@ -10,6 +10,7 @@
 h1,
 h2 {
   font-family: "PT Sans", sans-serif;
+  color: var(--main-orange);
 }
 h1 {
   font-size: 48px;
@@ -34,10 +35,10 @@ header {
   justify-content: space-between;
   align-items: center;
   min-width: 100%;
-
   background-color: var(--main-orange);
-  position: fixed;
+  position: sticky;
   box-shadow: 2px 2px 4px 4px black;
+  top: 0;
 }
 header a img {
   border-radius: 5px;
@@ -55,4 +56,44 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: black;
+}
+
+/* Main content */
+main {
+  margin-top: 7rem;
+  z-index: -1;
+}
+.content-wrapper {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+/* Hero section */
+.hero-content-wrapper {
+  display: flex;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.carousel-hero-img-wrapper {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  flex: 1.8;
+}
+.cta {
+  text-align: center;
+  flex: 1.5;
+  padding: 2rem;
+}
+.cta p {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+.cta a {
+  color: white;
+  background-color: var(--main-orange);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: 0.6px solid black;
+  border-radius: 5px;
 }
