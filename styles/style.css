@@ -1,0 +1,58 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* Global Styles */
+:root {
+  --main-orange: #ff791f;
+}
+h1,
+h2 {
+  font-family: "PT Sans", sans-serif;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+p {
+  font-size: 23px;
+  font-family: "Lato", sans-serif;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: 900;
+}
+
+/* Navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+
+  background-color: var(--main-orange);
+  position: fixed;
+  box-shadow: 2px 2px 4px 4px black;
+}
+header a img {
+  border-radius: 5px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  border-right: 1px solid black;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  font-size: 24px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
