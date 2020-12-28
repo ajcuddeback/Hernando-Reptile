@@ -60,7 +60,7 @@ nav ul li a {
 
 /* Main content */
 main {
-  margin-top: 7rem;
+  margin-top: 2rem;
   z-index: -1;
 }
 .content-wrapper {
@@ -69,6 +69,14 @@ main {
 }
 
 /* Hero section */
+.home-hero-section {
+  box-shadow: 2px 5px 5px grey;
+  background-image: url("../images/main-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 50vh;
+  opacity: 0.9;
+}
 .hero-content-wrapper {
   display: flex;
   max-width: 70%;
@@ -88,6 +96,7 @@ main {
 .cta p {
   margin-top: 5rem;
   margin-bottom: 4rem;
+  color: white;
 }
 .cta a {
   color: white;
