@@ -39,6 +39,7 @@ header {
   position: sticky;
   box-shadow: 2px 2px 4px 4px black;
   top: 0;
+  z-index: 999;
 }
 header a img {
   border-radius: 5px;
@@ -74,8 +75,10 @@ main {
   background-image: url("../images/main-hero.jpg");
   background-position: center;
   background-size: cover;
-  min-height: 50vh;
-  opacity: 0.9;
+  background-attachment: fixed;
+  min-height: 65vh;
+  opacity: 0.86;
+  z-index: -2;
 }
 .hero-content-wrapper {
   display: flex;
