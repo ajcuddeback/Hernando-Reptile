@@ -421,12 +421,42 @@ main {
   align-self: center;
   margin-left: 0.5rem;
 }
-.adoptables-content p {
+.adoptables-content p,
+.adoptable-links {
   width: 80%;
   margin: 2rem auto;
 }
 .adoptable-links {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rem;
+}
+.adopt-img-wrapper {
+  position: relative;
+}
+.adoptable-links img {
+  border-radius: 50%;
+}
+.adoptable-links p {
+  position: absolute;
+  pointer-events: none;
+}
+.birdsP {
+  color: white;
+  top: 9rem;
+  left: 4.5rem;
+  font-size: 48px;
+}
+.reptP {
+  color: white;
+  top: 9.2rem;
+  left: 3.5rem;
+}
+.mammalsP {
+  color: white;
+  top: 10.2rem;
+  left: 4rem;
+  font-size: 32px;
 }
 /* Begin footer styles */
 footer {
