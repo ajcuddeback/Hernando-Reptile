@@ -7,7 +7,9 @@
 :root {
   --main-orange: #ff791f;
 }
-
+body {
+  background-color: rgb(238, 222, 194);
+}
 h1,
 h2 {
   font-family: "PT Sans", sans-serif;
@@ -41,9 +43,9 @@ header {
   justify-content: space-between;
   align-items: center;
   min-width: 100%;
-  background-color: var(--main-orange);
+  background-color: white;
   position: sticky;
-  box-shadow: 2px 2px 4px 4px black;
+  box-shadow: 2px 2px 4px 4px rgb(15, 15, 15);
   top: 0;
   z-index: 999;
 }
@@ -57,14 +59,14 @@ nav ul {
 }
 nav ul li {
   list-style: none;
-  border-right: 1px solid black;
+  border-right: 1px solid var(--main-orange);
   padding-right: 1rem;
   margin-right: 1rem;
   font-size: 24px;
 }
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: var(--main-orange);
 }
 
 /* Main content */
@@ -87,15 +89,19 @@ main {
 
 /* Hero section */
 .home-hero-section {
-  box-shadow: 2px 5px 5px grey;
   background-image: url("../images/main-hero.jpg");
+  margin-bottom: 2rem;
+}
+.home-hero-section,
+.donation-hero-section {
+  box-shadow: 2px 5px 5px grey;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 65vh;
-  opacity: 0.86;
+  min-height: 70vh;
+  min-width: 100%;
+  opacity: 0.82;
   z-index: -2;
-  margin-bottom: 2rem;
 }
 .hero-content-wrapper {
   display: flex;
@@ -229,15 +235,7 @@ main {
 
 /* Begin donation page styles */
 .donation-hero-section {
-  box-shadow: 2px 5px 5px grey;
   background-image: url("../images/donate-hero.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 70vh;
-  min-width: 100%;
-  opacity: 0.82;
-  z-index: -2;
   margin-bottom: 2rem;
   padding: 7rem;
 }
