@@ -99,11 +99,6 @@ main {
   margin-top: 1rem;
   z-index: -1;
 }
-.footer-fix1 {
-  padding-bottom: 10vh;
-  min-height: 100%;
-  position: relative;
-}
 
 .content-wrapper {
   max-width: 70%;
@@ -426,6 +421,13 @@ main {
   align-self: center;
   margin-left: 0.5rem;
 }
+.adoptables-content p {
+  width: 80%;
+  margin: 2rem auto;
+}
+.adoptable-links {
+  display: flex;
+}
 /* Begin footer styles */
 footer {
   min-width: 100%;
@@ -433,8 +435,13 @@ footer {
   background-color: var(--main-orange);
   box-shadow: 2px 2px 4px 4px black;
 }
+.footer-fix1 {
+  /* padding-bottom: 10vh; */
+  min-height: 100vh;
+  position: relative;
+}
 .footer-fix {
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 .footer-content {
