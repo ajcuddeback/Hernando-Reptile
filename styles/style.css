@@ -219,6 +219,7 @@ main {
   position: absolute;
   bottom: 10rem;
   left: 14rem;
+  pointer-events: none;
 }
 .ticket p {
   font-size: 16px;
@@ -226,6 +227,7 @@ main {
   width: 50%;
   bottom: 1rem;
   left: 15rem;
+  pointer-events: none;
 }
 
 .events {
