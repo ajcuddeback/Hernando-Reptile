@@ -404,6 +404,28 @@ main {
   margin: 1rem auto 0rem auto;
   padding-top: 3rem;
 }
+
+/* End of main content */
+
+/* End of donate page */
+
+/* Begin of adoptables page */
+
+.head {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+.head svg {
+  margin-left: 0.5rem;
+  align-self: center;
+}
+.dash-div {
+  width: 75%;
+  border-bottom: 2px dashed var(--main-orange);
+  align-self: center;
+  margin-left: 0.5rem;
+}
 /* Begin footer styles */
 footer {
   min-width: 100%;
