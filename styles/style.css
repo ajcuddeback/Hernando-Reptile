@@ -326,9 +326,6 @@ main {
   flex: 1;
   margin-right: 2rem;
 }
-.donation-right-content {
-  flex: 1;
-}
 .donation-left-content p,
 .donation-left-content h1 {
   margin-top: 2rem;
@@ -344,6 +341,57 @@ main {
 .paypall-button {
   width: 10rem;
   height: 3rem;
+}
+.donation-right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.donation-right-content svg,
+.donation-right-content a {
+  margin-left: 9rem;
+}
+.donation-right-content svg,
+.donation-right-content a,
+.donation-right-content h2 {
+  margin-top: 4rem;
+  text-align: center;
+}
+.donation-right-content h2 {
+  margin-top: 1rem;
+}
+.top-heading,
+.bottom-p,
+.top-p,
+.bottom-heading {
+  width: 80%;
+  text-align: center;
+}
+.top-heading {
+  padding-top: 1rem;
+  border-top: 2px dashed var(--main-orange);
+  margin: 0 auto;
+}
+.bottom-heading {
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  border-bottom: 2px dashed black;
+}
+.donation-right-content a {
+  width: 360px;
+}
+.donation-right-content a img {
+  height: 30rem;
+}
+.bottom-p {
+  margin: 2rem auto 0rem auto;
+  padding: 2rem;
+  border-top: 2px dashed var(--main-orange);
+}
+.top-p {
+  margin: 1rem auto 0rem auto;
+  padding-top: 3rem;
+  border-top: 2px dashed var(--main-orange);
 }
 /* Begin footer styles */
 footer {
