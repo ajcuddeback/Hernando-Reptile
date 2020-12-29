@@ -168,5 +168,40 @@ main {
   width: 80%;
   height: 300px;
   border: 1px solid black;
-  margin: 0 auto;
+  margin: 4rem auto;
+}
+
+/* End of adoptable slider */
+
+/* Begin extras section */
+.extras {
+  display: flex;
+}
+.ticket {
+  position: relative;
+}
+
+.o25 {
+  position: absolute;
+  bottom: 7rem;
+  left: 2.2rem;
+  pointer-events: none;
+}
+.ticket h3 {
+  position: absolute;
+  bottom: 2.8rem;
+  left: 2.5rem;
+  pointer-events: none;
+}
+.s275 {
+  position: absolute;
+  bottom: 10rem;
+  left: 14rem;
+}
+.ticket p {
+  font-size: 16px;
+  position: absolute;
+  width: 50%;
+  bottom: 1rem;
+  left: 15rem;
 }
