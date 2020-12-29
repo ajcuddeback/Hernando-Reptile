@@ -33,24 +33,25 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="donation-hero">
-        <div class="donation-hero-content">
-            <h1>Donate to the Rescue</h1>
-            <p>Your donation will help us provide intake, rehabilitation and find forever homes for reptiles,
-                amphibians and exotic non-native animals! Every penny makes a difference!</p>
-            <div class="donation-form">
-                <h2>Enter your donation</h2>
-                <input type="text" name="donation-amount" id="donation-amount"
-                    onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))"
-                    placeholder="50.00">
-                <button type="submit" id="donate-button">Donate Now</button>
-            </div>
-        </div>
-    </section>
 
     <!-- Main Content -->
     <main>
+
+        <section class="donation-hero-section">
+            <div class="donation-hero-content-wrapper">
+                <h1>Donate to the Rescue</h1>
+                <p>Your donation will help us provide intake, rehabilitation and find forever homes for reptiles,
+                    amphibians and exotic non-native animals! Every penny makes a difference!</p>
+                <div class="donation-form">
+                    <h2>Enter your donation</h2>
+                    <input type="text" name="donation-amount" id="donation-amount"
+                        onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))"
+                        placeholder="50.00">
+                    <button type="submit" id="donate-button">Donate Now</button>
+                </div>
+            </div>
+        </section>
+
         <div class="content-wrapper">
             <!-- Left Side Content -->
             <div class="donation-left-content">

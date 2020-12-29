@@ -227,11 +227,84 @@ main {
 
 /* End of homepage styles */
 
+/* Begin donation page styles */
+.donation-hero-section {
+  box-shadow: 2px 5px 5px grey;
+  background-image: url("../images/donate-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 70vh;
+  min-width: 100%;
+  opacity: 0.82;
+  z-index: -2;
+  margin-bottom: 2rem;
+  padding: 7rem;
+}
+.donation-hero-content-wrapper {
+  max-width: 40%;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 10px;
+  opacity: 0.95;
+}
+.donation-hero-content-wrapper h1 {
+  margin-bottom: 1rem;
+  opacity: 1;
+}
+.donation-hero-content-wrapper p {
+  text-align: center;
+  color: black;
+  margin-bottom: 1rem;
+}
+.donation-form {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.donation-form h2 {
+  margin-bottom: 30px;
+}
+.donation-form input,
+.donation-form button {
+  text-align: center;
+}
+.donation-form input {
+  padding: 5px 10px;
+  font-size: 24px;
+}
+.donation-form button {
+  position: relative;
+  top: 0;
+  margin-top: 0.5rem;
+  padding: 7px 12px;
+  background-color: var(--main-orange);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.donation-form button:hover {
+  transition: 0.1s ease-in-out;
+  background-color: #b34e0b;
+  top: 2px;
+}
+.donation-form button:active {
+  top: 4px;
+}
+
 /* Begin footer styles */
 footer {
   min-width: 100%;
   height: 10vh;
   background-color: var(--main-orange);
+  box-shadow: 2px 2px 4px 4px black;
 }
 .footer-fix {
   position: absolute;
