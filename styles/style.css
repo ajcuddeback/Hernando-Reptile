@@ -239,6 +239,7 @@ footer {
 }
 .footer-content {
   display: flex;
+  padding-top: 4vh;
 }
 .footer-content p,
 .footer-content a {
