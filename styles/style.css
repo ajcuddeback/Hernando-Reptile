@@ -155,3 +155,18 @@ main {
   margin-left: 2rem;
   margin-top: 5rem;
 }
+
+/* End of main content */
+
+/* Begin of Adoptable slider */
+
+.adoptable-preview h1 {
+  text-align: center;
+  margin-top: 5rem;
+}
+.adoptable-carousel {
+  width: 80%;
+  height: 300px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
