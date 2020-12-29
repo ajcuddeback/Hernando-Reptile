@@ -106,6 +106,7 @@ main {
 .hero-content-wrapper {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   max-width: 70%;
   margin: 0 auto;
 }
@@ -113,6 +114,8 @@ main {
   min-width: 500px;
   height: 500px;
   border: 1px solid black;
+  background: black;
+  margin-top: 5vh;
   flex: 1.8;
 }
 .cta {
