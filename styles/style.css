@@ -68,13 +68,15 @@ nav ul li a {
 
 /* Main content */
 main {
-  margin-top: 2rem;
+  margin-top: 1rem;
   z-index: -1;
 }
 .content-wrapper {
   max-width: 70%;
   margin: 0 auto;
 }
+
+/* Begin Home page content */
 
 /* Hero section */
 .home-hero-section {
@@ -136,7 +138,7 @@ main {
 }
 
 .featured-animals {
-  border-left: 1px solid black;
+  border-left: 1px dashed var(--main-orange);
   margin-left: 1rem;
 }
 .featured-adoptable,
@@ -176,6 +178,10 @@ main {
 /* Begin extras section */
 .extras {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  border-top: 1px dashed var(--main-orange);
 }
 .ticket {
   position: relative;
@@ -204,4 +210,45 @@ main {
   width: 50%;
   bottom: 1rem;
   left: 15rem;
+}
+
+.events {
+  max-width: 40%;
+}
+
+/* End of extras section */
+
+/* End of homepage styles */
+
+/* Begin footer styles */
+footer {
+  min-width: 100%;
+  padding: 5vh;
+  background-color: var(--main-orange);
+}
+.footer-content {
+  display: flex;
+}
+.footer-content p,
+.footer-content a {
+  margin-left: 2rem;
+}
+.footer-content a {
+  text-decoration: none;
+  color: black;
+}
+.footer-content i {
+  font-size: 30px;
+}
+.fa-instagram {
+  background: -webkit-linear-gradient(45deg, #f99847, #de554c, #a84b7a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-facebook-square {
+  color: blue;
+}
+.fa-youtube {
+  color: red;
 }
