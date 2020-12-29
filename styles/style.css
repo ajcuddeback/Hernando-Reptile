@@ -35,6 +35,21 @@ a {
 .bold {
   font-weight: 900;
 }
+.button {
+  position: relative;
+  top: 0;
+  background-color: var(--main-orange);
+  color: white;
+  border-radius: 5px;
+}
+.button:hover {
+  transition: 0.1s ease-in-out;
+  background-color: #b34e0b;
+  top: 2px;
+}
+.button:active {
+  top: 4px;
+}
 
 /* Navigation */
 header {
@@ -67,6 +82,11 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: var(--main-orange);
+  transition: all 0.2s ease;
+}
+nav ul li a:hover {
+  color: #cc6018;
+  text-shadow: 1px 1px #cc6018;
 }
 
 /* Main content */
@@ -284,22 +304,9 @@ main {
   font-size: 24px;
 }
 .donation-form button {
-  position: relative;
-  top: 0;
   margin-top: 0.5rem;
   padding: 7px 12px;
-  background-color: var(--main-orange);
-  color: white;
-  border-radius: 5px;
   cursor: pointer;
-}
-.donation-form button:hover {
-  transition: 0.1s ease-in-out;
-  background-color: #b34e0b;
-  top: 2px;
-}
-.donation-form button:active {
-  top: 4px;
 }
 
 /* Begin footer styles */
