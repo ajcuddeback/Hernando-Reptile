@@ -50,6 +50,9 @@ a {
 .button:active {
   top: 4px;
 }
+a {
+  text-decoration: none;
+}
 
 /* Navigation */
 header {
@@ -259,6 +262,8 @@ main {
 /* End of homepage styles */
 
 /* Begin donation page styles */
+
+/* Hero section */
 .donation-hero-section {
   background-image: url("../images/donate-hero.jpg");
   margin-bottom: 2rem;
@@ -309,6 +314,37 @@ main {
   cursor: pointer;
 }
 
+/* End hero section */
+
+/* Begin main content */
+
+.donation-content {
+  display: flex;
+  justify-content: space-between;
+}
+.donation-left-content {
+  flex: 1;
+  margin-right: 2rem;
+}
+.donation-right-content {
+  flex: 1;
+}
+.donation-left-content p,
+.donation-left-content h1 {
+  margin-top: 2rem;
+}
+.donate-links {
+  display: flex;
+  align-items: center;
+}
+.donate-links a {
+  color: #00a9b3;
+  margin-left: 2vh;
+}
+.paypall-button {
+  width: 10rem;
+  height: 3rem;
+}
 /* Begin footer styles */
 footer {
   min-width: 100%;
