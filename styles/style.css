@@ -412,12 +412,12 @@ main {
 /* Begin of adoptables page */
 
 .information-page {
-  height: 200vh;
+  height: 100vh;
   width: 100%;
   background-color: white;
   color: black;
   z-index: 999;
-  position: absolute;
+  position: fixed;
   transform: translateX(200%);
 }
 .information-page-move-in {
