@@ -9,6 +9,8 @@
 }
 body {
   background-color: rgb(238, 222, 194);
+  position: relative;
+  overflow-x: hidden;
 }
 h1,
 h2 {
@@ -56,6 +58,9 @@ a {
 .top-dashed-line {
   border-top: 2px dashed var(--main-orange);
 }
+.medium-text {
+  font-size: 36px;
+}
 /* Navigation */
 header {
   display: flex;
@@ -67,7 +72,7 @@ header {
   position: sticky;
   box-shadow: 2px 2px 4px 4px rgb(15, 15, 15);
   top: 0;
-  z-index: 999;
+  z-index: 888;
 }
 header a img {
   border-radius: 5px;
@@ -406,6 +411,61 @@ main {
 
 /* Begin of adoptables page */
 
+.information-page {
+  height: 200vh;
+  width: 100%;
+  background-color: white;
+  color: black;
+  z-index: 999;
+  position: absolute;
+  transform: translateX(200%);
+}
+.information-page-move-in {
+  animation: move-in 1s forwards ease-in-out;
+}
+.information-page-move-out {
+  animation: move-out 1s forwards ease-in-out;
+}
+@keyframes move-in {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes move-out {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(200%);
+  }
+}
+.information-page button {
+  position: absolute;
+  right: 20rem;
+  top: 5rem;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.line1 {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: black;
+  transform: translate(0px, 2.8px) rotate(45deg);
+  pointer-events: none;
+}
+.line2 {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: black;
+  transform: translate(0px, -2.8px) rotate(-45deg);
+  pointer-events: none;
+}
 .head {
   display: flex;
   align-items: flex-end;
@@ -458,6 +518,25 @@ main {
   left: 4rem;
   font-size: 32px;
 }
+
+/* End adoptable home page */
+
+/* Beigin individual adoptable styles */
+
+.individual-adopt-content p {
+  width: 90%;
+  margin: 2rem auto 0 auto;
+}
+.adopt-images-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  border: 1px solid black;
+  height: 20vh;
+}
+
 /* Begin footer styles */
 footer {
   min-width: 100%;
