@@ -666,6 +666,20 @@ main {
   margin-left: 3rem;
 }
 
+/* End of contact us page */
+
+/* Begin of pit micro page */
+
+.micro-slideshow {
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+  float: right;
+  margin: 2rem;
+}
+.micro-content p {
+  margin-bottom: 1rem;
+}
 /* Begin footer styles */
 footer {
   min-width: 100%;
