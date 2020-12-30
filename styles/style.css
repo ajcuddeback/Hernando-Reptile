@@ -591,6 +591,34 @@ main {
   margin-top: 1rem;
 }
 
+/* End of individual adoptable style */
+
+/* Begin volunteer page */
+
+.top-content {
+  display: flex;
+}
+.volunteer-content p {
+  margin-bottom: 1rem;
+}
+.volunteer-left-content {
+  width: 50%;
+}
+.volunteer-carousel {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+  float: right;
+}
+.volunteer-content ul {
+  width: 50%;
+  margin-left: 4rem;
+}
+.volunteer-content ul li {
+  margin-bottom: 1rem;
+}
 /* Begin footer styles */
 footer {
   min-width: 100%;
