@@ -625,6 +625,47 @@ main {
   font-size: 20px;
 }
 
+/* End of volunteer page */
+
+/* Begin contact us page */
+
+.contact-content p {
+  margin-bottom: 1rem;
+}
+.contact-form {
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+.contact-info {
+  width: 30%;
+}
+.contact-info p {
+  margin-top: 2rem;
+}
+.form {
+  width: 40%;
+}
+.form input {
+  height: 3rem;
+}
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 0.2rem;
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
+.form button {
+  width: 5rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.contact-content iframe {
+  margin-left: 3rem;
+}
+
 /* Begin footer styles */
 footer {
   min-width: 100%;
