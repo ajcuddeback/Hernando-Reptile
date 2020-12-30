@@ -791,6 +791,9 @@ footer {
   p {
     font-size: 16px;
   }
+  .volunteer-content ul li {
+    font-size: 16px;
+  }
   .extras {
     flex-direction: column;
     align-items: center;
@@ -1023,7 +1026,7 @@ footer {
   }
   .ticket a img {
     width: 450px;
-    height: 178.33;
+    height: 178.33px;
   }
   .ticket h2 {
     font-size: 25px;
@@ -1064,5 +1067,102 @@ footer {
   }
   .right .info {
     order: 2;
+  }
+  .carousel-hero-img-wrapper {
+    order: 2;
+  }
+  .cta {
+    order: 1;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+  .cta p {
+    color: black;
+  }
+  .cta p,
+  .cta h1,
+  .cta a {
+    opacity: 1;
+  }
+  .carousel-hero-img-wrapper {
+    margin-bottom: 1rem;
+    width: 350px;
+    height: 350px;
+  }
+  .featured-text {
+    width: 80%;
+  }
+  .featured-ambassador {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 680px) {
+  .logo {
+    margin-left: 10rem;
+  }
+  header a img {
+    right: 2.5rem;
+  }
+  .volunteer-carousel,
+  .micro-slideshow {
+    float: none;
+    margin-left: 8rem;
+  }
+}
+@media screen and (max-width: 590px) {
+  .donation-hero-section {
+    padding: 2rem;
+  }
+  .menu {
+    width: 50%;
+  }
+  .license-links a img {
+    width: 6.8rem;
+  }
+  .volunteer-carousel,
+  .micro-slideshow {
+    margin-left: 6rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .volunteer-carousel,
+  .micro-slideshow {
+    margin-left: 4rem;
+  }
+  .ticket a img {
+    width: 350px;
+    height: 138.7;
+  }
+  .o25 {
+    font-size: 12px;
+    left: 1.4rem;
+    top: 3.5rem;
+  }
+  .ticket h3 {
+    bottom: 2.3rem;
+    left: 1.3rem;
+  }
+  .s275 {
+    font-size: 12px;
+    bottom: 7rem;
+    left: 10rem;
+  }
+  .ticket p {
+    font-size: 11px;
+    left: 10rem;
+  }
+  .volunteer-carousel,
+  .micro-slideshow {
+    margin-left: 2rem;
+  }
+  .info {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  header a img {
+    right: 4rem;
   }
 }
