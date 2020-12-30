@@ -690,6 +690,29 @@ main {
 .micro-signup-content {
   width: 40%;
 }
+
+/* End of micro page styles */
+
+/* Begin meet the team page */
+.left,
+.right {
+  display: flex;
+  align-items: center;
+}
+.right {
+  justify-content: flex-end;
+}
+.info {
+  width: 50%;
+}
+.image {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 1rem 3rem;
+}
+
 /* Begin footer styles */
 footer {
   min-width: 100%;
