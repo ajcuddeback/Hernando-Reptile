@@ -555,7 +555,8 @@ main {
   height: 20vh;
 }
 .adopt-form,
-.volunteer-signup {
+.volunteer-signup,
+.micro-signup {
   display: flex;
   margin: 2rem 0rem;
   padding-top: 1rem;
@@ -565,35 +566,41 @@ main {
   width: 50%;
 }
 .left-adopt-content p,
-.signup-info p {
+.signup-info p,
+.micro-signup p {
   margin: 1rem 0rem;
 }
 .right-adopt-content form .form-elements,
-.volunteer-form form .form-elements {
+.volunteer-form form .form-elements,
+.micro-signup form .form-elements {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .right-adopt-content .input-wrapper,
-.volunteer-form .input-wrapper {
+.volunteer-form .input-wrapper,
+.micro-form .input-wrapper {
   display: flex;
   flex-direction: column;
 }
 .right-adopt-content input,
-.volunteer-form input {
+.volunteer-form input,
+.micro-form input {
   margin-bottom: 1rem;
   margin-left: 1rem;
   padding: 0.5rem;
   border-radius: 6px;
 }
 .right-adopt-content textarea,
-.volunteer-form textarea {
+.volunteer-form textarea,
+.micro-form textarea {
   padding: 1rem;
   border-radius: 8px;
   margin-left: 1rem;
 }
 .right-adopt-content button,
-.volunteer-form button {
+.volunteer-form button,
+.micro-form button {
   width: 5rem;
   height: 2rem;
   cursor: pointer;
@@ -679,6 +686,9 @@ main {
 }
 .micro-content p {
   margin-bottom: 1rem;
+}
+.micro-signup-content {
+  width: 40%;
 }
 /* Begin footer styles */
 footer {
