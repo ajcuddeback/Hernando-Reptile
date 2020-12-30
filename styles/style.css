@@ -554,6 +554,42 @@ main {
   border: 1px solid black;
   height: 20vh;
 }
+.adopt-form {
+  display: flex;
+  margin: 2rem 0rem;
+  padding-top: 1rem;
+}
+.left-adopt-content {
+  width: 50%;
+}
+.left-adopt-content p {
+  margin: 1rem 0rem;
+}
+.right-adopt-content form .form-elements {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.right-adopt-content .input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.right-adopt-content input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+.right-adopt-content textarea {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-left: 1rem;
+}
+.right-adopt-content button {
+  width: 5rem;
+  height: 2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
 
 /* Begin footer styles */
 footer {

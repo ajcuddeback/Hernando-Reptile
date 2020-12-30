@@ -111,7 +111,7 @@
 
             </div>
 
-            <div class="adopt-form">
+            <div class="adopt-form top-dashed-line">
                 <div class="left-adopt-content">
                     <h2>Help make a difference and Adopt a rescued animal today!</h2>
                     <p>If you are interested in or have any questions about any of the animals pictured above,
@@ -127,18 +127,18 @@
                 </div>
                 <div class="right-adopt-content">
                     <form action="https://formspree.io/f/mdopppdn" method="POST">
-                        <label>
-                            Your email:
-                            <input type="text" name="_replyto">
-                        </label>
-                        <label>
-                            Your message:
-                            <textarea name="message"></textarea>
-                        </label>
+                        <div class="form-elements">
+                            <div class="input-wrapper">
+                                <input type="text" name="Name" placeholder="Name" required>
+                                <input type="text" name="_replyto" placeholder="Email" required>
+                                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    placeholder="123-456-7890" required>
+                            </div>
+                            <textarea name="message" rows="2" cols="30" placeholder="Type you message here..."
+                                required></textarea>
+                        </div>
 
-                        <!-- your other form fields go here -->
-
-                        <button type="submit">Send</button>
+                        <button type="submit" class="button">Send</button>
                     </form>
                 </div>
             </div>
