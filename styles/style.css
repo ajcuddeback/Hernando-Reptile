@@ -554,55 +554,59 @@ main {
   border: 1px solid black;
   height: 20vh;
 }
-.adopt-form {
+.adopt-form,
+.volunteer-signup {
   display: flex;
   margin: 2rem 0rem;
   padding-top: 1rem;
 }
-.left-adopt-content {
+.left-adopt-content,
+.signup-info {
   width: 50%;
 }
-.left-adopt-content p {
+.left-adopt-content p,
+.signup-info p {
   margin: 1rem 0rem;
 }
-.right-adopt-content form .form-elements {
+.right-adopt-content form .form-elements,
+.volunteer-form form .form-elements {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.right-adopt-content .input-wrapper {
+.right-adopt-content .input-wrapper,
+.volunteer-form .input-wrapper {
   display: flex;
   flex-direction: column;
 }
-.right-adopt-content input {
+.right-adopt-content input,
+.volunteer-form input {
   margin-bottom: 1rem;
+  margin-left: 1rem;
   padding: 0.5rem;
   border-radius: 6px;
 }
-.right-adopt-content textarea {
+.right-adopt-content textarea,
+.volunteer-form textarea {
   padding: 1rem;
   border-radius: 8px;
   margin-left: 1rem;
 }
-.right-adopt-content button {
+.right-adopt-content button,
+.volunteer-form button {
   width: 5rem;
   height: 2rem;
   cursor: pointer;
   margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 /* End of individual adoptable style */
 
 /* Begin volunteer page */
 
-.top-content {
-  display: flex;
-}
 .volunteer-content p {
   margin-bottom: 1rem;
-}
-.volunteer-left-content {
-  width: 50%;
 }
 .volunteer-carousel {
   width: 500px;
@@ -618,7 +622,9 @@ main {
 }
 .volunteer-content ul li {
   margin-bottom: 1rem;
+  font-size: 20px;
 }
+
 /* Begin footer styles */
 footer {
   min-width: 100%;
