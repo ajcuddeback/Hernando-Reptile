@@ -938,7 +938,7 @@ footer {
 /* Media querry for screen width 900px and below */
 @media screen and (max-width: 902px) {
   footer {
-    height: 200px;
+    height: 250px;
   }
   .footer-content {
     flex-direction: column;
@@ -1133,7 +1133,6 @@ footer {
   }
   .ticket a img {
     width: 350px;
-    height: 138.7;
   }
   .o25 {
     font-size: 12px;
@@ -1164,5 +1163,52 @@ footer {
 @media screen and (max-width: 480px) {
   header a img {
     right: 4rem;
+  }
+  .license-links a img {
+    width: 5.9rem;
+  }
+  .license-links {
+    margin-left: 4rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .carousel-hero-img-wrapper {
+    width: 275px;
+    height: 275px;
+  }
+  .ticket {
+    margin-bottom: 2rem;
+  }
+  .ticket a img {
+    display: none;
+  }
+  .o25,
+  .ticket h3,
+  .s275,
+  .ticket p {
+    position: initial;
+  }
+  .extras {
+    align-items: flex-start;
+  }
+  .logo {
+    margin-left: 6rem;
+  }
+  header a img {
+    right: 2rem;
+  }
+  .donation-hero-section {
+    padding: 0.3rem;
+  }
+  .head svg,
+  .dash-div {
+    display: none;
+  }
+  .head {
+    justify-content: center;
+  }
+  .volunteer-carousel,
+  .micro-slideshow {
+    margin-left: 0.5rem;
   }
 }
