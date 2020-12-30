@@ -110,26 +110,6 @@ label {
 #toggle {
   display: none;
 }
-/* nav ul {
-  margin-right: 3rem;
-  display: flex;
-}
-nav ul li {
-  list-style: none;
-  border-right: 1px solid var(--main-orange);
-  padding-right: 1rem;
-  margin-right: 1rem;
-  font-size: 24px;
-}
-nav ul li a {
-  text-decoration: none;
-  color: var(--main-orange);
-  transition: all 0.2s ease;
-}
-nav ul li a:hover {
-  color: #cc6018;
-  text-shadow: 1px 1px #cc6018;
-} */
 
 /* Main content */
 main {
@@ -167,12 +147,11 @@ main {
   margin: 0 auto;
 }
 .carousel-hero-img-wrapper {
-  min-width: 500px;
+  width: 600px;
   height: 500px;
   border: 1px solid black;
   background: black;
   margin-top: 5vh;
-  flex: 1.8;
 }
 .cta {
   text-align: center;
@@ -801,7 +780,12 @@ footer {
     width: 100%;
   }
 }
-
+@media screen and (max-width: 1500px) {
+  .carousel-hero-img-wrapper {
+    width: 500px;
+    height: 400px;
+  }
+}
 /* Media querry for devices under 1300px */
 @media screen and (max-width: 1300px) {
   p {
@@ -835,17 +819,42 @@ footer {
   .micro-form button {
     margin-left: 3rem;
   }
+  .carousel-hero-img-wrapper {
+    width: 450px;
+    height: 350px;
+  }
 }
 @media screen and (max-width: 1130px) {
+  .carousel-hero-img-wrapper {
+    width: 300px;
+    height: 300px;
+  }
   .logo {
     margin-left: 20rem;
   }
+  .piggy {
+    display: none;
+  }
+  .donation-content {
+    flex-direction: column;
+  }
+  .silver-award {
+    display: none;
+  }
   .hero-content-wrapper {
-    max-width: 90%;
+    max-width: 80%;
   }
   .home-hero-section,
   .donation-hero-section {
     min-height: 50vh;
+  }
+  .donation-hero-content-wrapper {
+    max-width: 80%;
+  }
+  .micro-slideshow,
+  .volunteer-carousel {
+    height: 400px;
+    width: 400px;
   }
   label {
     display: block;
@@ -869,7 +878,7 @@ footer {
   #toggle,
   label {
     position: relative;
-    left: 10rem;
+    left: 6rem;
     bottom: 1rem;
   }
   .menu a {
@@ -906,5 +915,44 @@ footer {
       transform: translateX(-1000px);
       opacity: 0;
     }
+  }
+}
+/* Media querry for screen width 900px and below */
+@media screen and (max-width: 902px) {
+  footer {
+    height: 200px;
+  }
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-content a {
+    margin-top: 1rem;
+  }
+  .micro-slideshow,
+  .volunteer-carousel {
+    height: 350px;
+    width: 350px;
+  }
+  .volunteer-signup,
+  .micro-signup,
+  .adopt-form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .micro-signup-content,
+  .signup-info,
+  .adopt-form {
+    width: 80%;
+    margin: 2rem auto 1rem auto;
+  }
+  .adoptable-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .adoptable-links div {
+    margin-bottom: 1rem;
   }
 }
