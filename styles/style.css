@@ -78,7 +78,39 @@ header a img {
   border-radius: 5px;
   margin-left: 3rem;
 }
-nav ul {
+
+nav {
+  line-height: 70px;
+}
+.menu {
+  margin: 0 30px 0 0;
+}
+.menu a {
+  text-decoration: none;
+  color: var(--main-orange);
+  margin: 0 10px;
+  line-height: 70px;
+  transition: all 0.2s ease;
+  border-right: 1px solid var(--main-orange);
+  padding-right: 1rem;
+  clear: right;
+}
+.menu a:hover {
+  color: #cc6018;
+  text-shadow: 1px 1px #cc6018;
+}
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+#toggle {
+  display: none;
+}
+/* nav ul {
   margin-right: 3rem;
   display: flex;
 }
@@ -97,7 +129,7 @@ nav ul li a {
 nav ul li a:hover {
   color: #cc6018;
   text-shadow: 1px 1px #cc6018;
-}
+} */
 
 /* Main content */
 main {
@@ -802,5 +834,77 @@ footer {
   .volunteer-form button,
   .micro-form button {
     margin-left: 3rem;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .logo {
+    margin-left: 20rem;
+  }
+  .hero-content-wrapper {
+    max-width: 90%;
+  }
+  .home-hero-section,
+  .donation-hero-section {
+    min-height: 50vh;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  header {
+    flex-direction: column;
+    height: 100px;
+  }
+  .menu {
+    display: flex;
+    text-align: center;
+    width: 30%;
+    background-color: var(--main-orange);
+    position: absolute;
+    left: 0;
+    transform: translateX(-1000px);
+    border: 1px solid black;
+    height: 100vh;
+  }
+  #toggle,
+  label {
+    position: relative;
+    left: 10rem;
+    bottom: 1rem;
+  }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid black;
+    border-right: none;
+    margin: 0;
+    transition: 1s;
+    color: white;
+  }
+  #toggle:checked + .menu {
+    display: block;
+    animation: menu-in 1s forwards;
+  }
+  #toggle:not(:checked) + .menu {
+    animation: menu-out 1s forwards;
+    display: flex;
+    flex-direction: column;
+  }
+  @keyframes menu-in {
+    from {
+      transform: translateX(-1000px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+  }
+  @keyframes menu-out {
+    from {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
   }
 }
