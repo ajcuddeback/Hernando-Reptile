@@ -804,6 +804,9 @@ main {
   align-items: center;
   margin-bottom: 1rem;
 }
+.lauren {
+  align-self: flex-start;
+}
 .right {
   justify-content: flex-end;
 }
@@ -904,7 +907,7 @@ footer {
 @media screen and (max-width: 1500px) {
   .carousel-hero-img-wrapper .main-carousel img {
     width: 500px;
-    height: 400px;
+    height: 416.66px;
   }
 }
 /* Media querry for devices under 1300px */
@@ -948,13 +951,13 @@ footer {
   }
   .carousel-hero-img-wrapper .main-carousel img {
     width: 450px;
-    height: 350px;
+    height: 375px;
   }
 }
 @media screen and (max-width: 1130px) {
   .carousel-hero-img-wrapper .main-carousel img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 333.33px;
   }
   .logo {
     margin-left: 20rem;
@@ -1111,6 +1114,10 @@ footer {
 
 /* Media querry for devices 790px in width and below */
 @media screen and (max-width: 790px) {
+  .carousel-hero-img-wrapper .main-carousel img {
+    width: 360px;
+    height: 300px;
+  }
   .credit-card-form {
     width: 80%;
   }
@@ -1237,7 +1244,7 @@ footer {
   .carousel-hero-img-wrapper .main-carousel img {
     margin-bottom: 1rem;
     width: 350px;
-    height: 350px;
+    height: 291.67px;
   }
   .featured-text {
     width: 80%;
@@ -1345,7 +1352,7 @@ footer {
   }
   .carousel-hero-img-wrapper .main-carousel img {
     width: 275px;
-    height: 275px;
+    height: 229px;
   }
   .ticket {
     margin-bottom: 2rem;
