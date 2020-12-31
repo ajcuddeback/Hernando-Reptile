@@ -1170,6 +1170,12 @@ footer {
   .license-links {
     margin-left: 4rem;
   }
+  .ticket h3 {
+    left: 1.8rem;
+  }
+  .ticket h3 a{
+      font-size: 12px;
+  }
 }
 @media screen and (max-width: 410px) {
   .carousel-hero-img-wrapper {
@@ -1211,4 +1217,16 @@ footer {
   .micro-slideshow {
     margin-left: 0.5rem;
   }
+}
+
+@media screen and (max-width: 350px) {
+    .logo {
+        margin-left: 3rem;
+    }
+    header a img {
+        right: 0rem;
+      }
+      .hero-content-wrapper {
+          max-width: 90%;
+      }
 }
