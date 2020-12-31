@@ -773,8 +773,12 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
+  .featured-ambassador {
+      margin-left: 0rem;
+  }
   .featured-img img {
     margin-top: 0rem;
+    margin-left: 0rem;
   }
   .adoptable-links {
     width: 100%;
