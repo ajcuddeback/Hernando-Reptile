@@ -943,7 +943,7 @@ footer {
   .footer-content {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   .footer-content a {
     margin-top: 1rem;
@@ -1175,6 +1175,9 @@ footer {
   }
   .ticket h3 a{
       font-size: 12px;
+  }
+  .footer-content a{
+      margin-left: 0rem;
   }
 }
 @media screen and (max-width: 410px) {
