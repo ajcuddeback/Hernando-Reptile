@@ -6,7 +6,7 @@ const volunteerImages = [
     '../images/volunteer-carousel/vc-2.jpg',
     '../images/volunteer-carousel/vc-3.jpg',
     '../images/volunteer-carousel/vc-4.jpg',
-    '..clear/images/volunteer-carousel/vc-5.jpg',
+    '../images/volunteer-carousel/vc-5.jpg',
     '../images/volunteer-carousel/vc-6.jpg',
     '../images/volunteer-carousel/vc-7.jpg',
     '../images/volunteer-carousel/vc-8.jpg',

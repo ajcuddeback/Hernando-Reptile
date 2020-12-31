@@ -721,11 +721,13 @@ main {
 }
 .volunteer-carousel {
   width: 500px;
-  height: 500px;
-  border: 1px solid black;
+  height: 666px;
   margin-left: 5rem;
   margin-bottom: 2rem;
   float: right;
+}
+.volunteer-image {
+  width: 500px;
 }
 .volunteer-content ul {
   width: 50%;
@@ -989,7 +991,10 @@ footer {
   .micro-slideshow,
   .volunteer-carousel {
     height: 400px;
-    width: 400px;
+    width: 300px;
+  }
+  .volunteer-image {
+    width: 300px;
   }
   .contact-form {
     flex-direction: column;
@@ -1083,7 +1088,10 @@ footer {
   }
   .micro-slideshow,
   .volunteer-carousel {
-    height: 350px;
+    height: 466px;
+    width: 350px;
+  }
+  .volunteer-image {
     width: 350px;
   }
   .volunteer-signup,
@@ -1176,7 +1184,10 @@ footer {
   }
   .micro-slideshow,
   .volunteer-carousel {
-    height: 250px;
+    height: 333px;
+    width: 300px;
+  }
+  .volunteer-image {
     width: 250px;
   }
   .ticket a img {
