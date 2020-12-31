@@ -55,6 +55,9 @@ a {
 a {
   text-decoration: none;
 }
+.margin-top {
+  margin-top: 2rem;
+}
 .top-dashed-line {
   border-top: 2px dashed var(--main-orange);
 }
@@ -855,6 +858,9 @@ footer {
   .donation-hero-section {
     min-height: 50vh;
   }
+  .donation-right-content svg, .donation-right-content a, .donation-right-content h2 {
+    margin-top: 1rem;
+  }
   .donation-hero-content-wrapper {
     max-width: 80%;
   }
@@ -1277,5 +1283,9 @@ footer {
         width: 100%;
         font-size: 14px;
       }
+      .donation-right-content h2 {
+        margin-top: 0rem;
+      }
+      
       
 }
