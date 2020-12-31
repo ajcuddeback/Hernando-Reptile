@@ -508,7 +508,7 @@ main {
   align-self: center;
 }
 .dash-div {
-  width: 75%;
+  width: 68%;
   border-bottom: 2px dashed var(--main-orange);
   align-self: center;
   margin-left: 0.5rem;
@@ -777,7 +777,7 @@ footer {
     justify-content: center;
   }
   .featured-ambassador {
-      margin-left: 0rem;
+    margin-left: 0rem;
   }
   .featured-img img {
     margin-top: 0rem;
@@ -785,6 +785,11 @@ footer {
   }
   .adoptable-links {
     width: 100%;
+  }
+}
+@media screen and (max-width: 1570px) {
+  .dash-div {
+    width: 60%;
   }
 }
 @media screen and (max-width: 1500px) {
@@ -809,6 +814,9 @@ footer {
   .form-elements,
   .form button {
     margin-left: 2rem;
+  }
+  .dash-div {
+    width: 50%;
   }
 }
 
@@ -858,7 +866,9 @@ footer {
   .donation-hero-section {
     min-height: 50vh;
   }
-  .donation-right-content svg, .donation-right-content a, .donation-right-content h2 {
+  .donation-right-content svg,
+  .donation-right-content a,
+  .donation-right-content h2 {
     margin-top: 1rem;
   }
   .donation-hero-content-wrapper {
@@ -945,6 +955,7 @@ footer {
     width: 80%;
   }
 }
+
 /* Media querry for screen width 900px and below */
 @media screen and (max-width: 902px) {
   footer {
@@ -1011,6 +1022,9 @@ footer {
   .featured-adoptable {
     flex-direction: column;
     align-items: center;
+  }
+  .dash-div {
+    width: 35%;
   }
   header a img {
     right: 6rem;
@@ -1107,8 +1121,19 @@ footer {
   .featured-ambassador {
     margin-left: 0;
   }
+  .dash-div {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 680px) {
+  .head svg,
+  .dash-div {
+    display: none;
+  }
+  .head {
+    justify-content: center;
+  }
+
   .logo {
     margin-left: 10rem;
   }
@@ -1183,11 +1208,11 @@ footer {
   .ticket h3 {
     left: 1.8rem;
   }
-  .ticket h3 a{
-      font-size: 12px;
+  .ticket h3 a {
+    font-size: 12px;
   }
-  .footer-content a{
-      margin-left: 0rem;
+  .footer-content a {
+    margin-left: 0rem;
   }
 }
 @media screen and (max-width: 410px) {
@@ -1201,17 +1226,16 @@ footer {
   .ticket a img {
     display: none;
   }
-  
-.o25,
-.ticket h3,
-.s275,
-.ticket p {
-    text-align: center;
-}
-.ticket p {
-     width: 100%;
-}
 
+  .o25,
+  .ticket h3,
+  .s275,
+  .ticket p {
+    text-align: center;
+  }
+  .ticket p {
+    width: 100%;
+  }
 
   .o25,
   .ticket h3,
@@ -1224,7 +1248,7 @@ footer {
   }
   .extras h1,
   .extras p {
-      text-align: center;
+    text-align: center;
   }
   .logo {
     margin-left: 6rem;
@@ -1249,43 +1273,41 @@ footer {
 }
 
 @media screen and (max-width: 350px) {
-    .logo {
-        margin-left: 3rem;
-    }
-    header a img {
-        right: 0rem;
-      }
-      .hero-content-wrapper {
-          max-width: 90%;
-      }
-      .featured-img img{
-          margin-left: 0rem;
-      }
-      .featured-text {
-          margin-left: 0rem;
-      }
-      .featured-text h2,
-      .featured-text p {
-          text-align: center;
-      }
-      .license-links a img {
-          width: 4.8rem;
-          margin-right: 1rem;
-      }
-      .donation-form input {
-          padding: 0rem;
-      }
-      .bottom-heading,
-      .top-heading {
-        font-size: 20px;
-      }
-      .bottom-p {
-        width: 100%;
-        font-size: 14px;
-      }
-      .donation-right-content h2 {
-        margin-top: 0rem;
-      }
-      
-      
+  .logo {
+    margin-left: 3rem;
+  }
+  header a img {
+    right: 0rem;
+  }
+  .hero-content-wrapper {
+    max-width: 90%;
+  }
+  .featured-img img {
+    margin-left: 0rem;
+  }
+  .featured-text {
+    margin-left: 0rem;
+  }
+  .featured-text h2,
+  .featured-text p {
+    text-align: center;
+  }
+  .license-links a img {
+    width: 4.8rem;
+    margin-right: 1rem;
+  }
+  .donation-form input {
+    padding: 0rem;
+  }
+  .bottom-heading,
+  .top-heading {
+    font-size: 20px;
+  }
+  .bottom-p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .donation-right-content h2 {
+    margin-top: 0rem;
+  }
 }
