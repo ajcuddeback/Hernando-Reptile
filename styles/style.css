@@ -784,11 +784,13 @@ main {
 /* Begin of pit micro page */
 
 .micro-slideshow {
-  height: 500px;
+  height: 680px;
   width: 500px;
-  border: 1px solid black;
   float: right;
   margin: 2rem;
+}
+.micro-slide {
+  width: 500px;
 }
 .micro-content p {
   margin-bottom: 1rem;
@@ -993,7 +995,9 @@ footer {
     height: 400px;
     width: 300px;
   }
-  .volunteer-image {
+
+  .volunteer-image,
+  .micro-slide {
     width: 300px;
   }
   .contact-form {
@@ -1091,7 +1095,8 @@ footer {
     height: 466px;
     width: 350px;
   }
-  .volunteer-image {
+  .volunteer-image,
+  .micro-slide {
     width: 350px;
   }
   .volunteer-signup,
@@ -1187,7 +1192,8 @@ footer {
     height: 333px;
     width: 300px;
   }
-  .volunteer-image {
+  .volunteer-image,
+  .micro-slide {
     width: 250px;
   }
   .ticket a img {
