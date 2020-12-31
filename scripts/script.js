@@ -34,66 +34,42 @@ const carouselSlide = function () {
     setTimeout('carouselSlide()', 5000);
 }
 window.onload = carouselSlide;
-
-
 let prevBtn = document.querySelector('.prevBtn');
 let nextBtn = document.querySelector('.nextBtn');
-
 let adopt1 = document.getElementById('adopt1');
 let adopt2 = document.getElementById('adopt2');
 let adopt3 = document.getElementById('adopt3');
-
 prevBtn.addEventListener('click', () => {
     if (index < adoptablesAnimals.length - 3) {
-
         adopt1.setAttribute('src', adoptablesAnimals[index])
         adopt2.setAttribute('src', adoptablesAnimals[index + 1])
         adopt3.setAttribute('src', adoptablesAnimals[index + 2])
-
         console.log(adopt1)
         console.log(adopt2)
         console.log(adopt3)
-
         index++;
-
     } else {
         index = 0;
         adopt1.setAttribute('src', adoptablesAnimals[index])
         adopt2.setAttribute('src', adoptablesAnimals[index + 1])
         adopt3.setAttribute('src', adoptablesAnimals[index + 2])
-
     }
 })
-
 nextBtn.addEventListener('click', () => {
     if (index < adoptablesAnimals.length - 3) {
-
         adopt1.setAttribute('src', adoptablesAnimals[index + 2])
         adopt2.setAttribute('src', adoptablesAnimals[index + 1])
         adopt3.setAttribute('src', adoptablesAnimals[index])
-
         console.log(adopt1)
         console.log(adopt2)
         console.log(adopt3)
-
         index++;
-
     } else {
         index = 0;
         adopt1.setAttribute('src', adoptablesAnimals[index + 2])
         adopt2.setAttribute('src', adoptablesAnimals[index + 1])
         adopt3.setAttribute('src', adoptablesAnimals[index])
-
     }
-
     // const adoptableWidth = adoptableCarousel.clientWidth;
     // adoptableCarousel.style.transform = `translateX(${-adoptableWidth/5}px)`;
 })
-
-
-
-
-
-
-
-
