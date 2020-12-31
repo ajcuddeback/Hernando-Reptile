@@ -167,7 +167,7 @@ main {
   max-width: 70%;
   margin: 0 auto;
 }
-.carousel-hero-img-wrapper {
+.carousel-hero-img-wrapper .main-carousel img {
   width: 600px;
   height: 500px;
   border: 1px solid black;
@@ -247,42 +247,42 @@ main {
 
 /* Begin of Adoptable slider */
 /* beginner of my css*/
-
+.main-carousel img {
+  width: 200px;
+  height: 200px;
+}
 .prevBtn,
-.nextBtn{
+.nextBtn {
   cursor: pointer;
   background: transparent;
   font-size: 30px;
-  border:none;
-  padding:10px;
-  color:white;
+  border: none;
+  padding: 10px;
+  color: white;
   margin: 1px;
 }
-#adoptable-controls{
-  position:absolute;
-  top:50%;
-  left:0;
+#adoptable-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
   transform: translateY(-50%);
-  width:100%;
-  display:flex;
+  width: 100%;
+  display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
 }
-.adoptables-images{
-  width:32%;
-  height:300px;
+.adoptables-images {
+  width: 350px;
+  height: 100%;
   border-radius: 20%;
-
+  margin-left: 2rem;
 }
-.button-images{
-  position:relative;
+.reptile {
+  width: 20%;
+  height: 20vh;
 }
-.reptile{
-  width:20%;
-  height:20vh;
-}
-.reptiles-holder{
-  position:absolute;
+.reptiles-holder {
+  position: absolute;
 }
 /*End of my css*/
 
@@ -292,10 +292,10 @@ main {
 }
 .adoptable-carousel {
   overflow: hidden;
- 
-  width: 80%;
+  display: flex;
+  justify-content: center;
+  width: 70%;
   height: 300px;
-  /* border: 1px solid black; */
   margin: 4rem auto;
 }
 
@@ -872,6 +872,12 @@ footer {
 
 /* Begin media queries */
 
+@media screen and (max-width: 1890px) {
+  #adoptable-controls {
+    width: 78%;
+    margin: 0 auto;
+  }
+}
 /* Media querry for devices under 1700px */
 
 @media screen and (max-width: 1700px) {
@@ -896,7 +902,7 @@ footer {
   }
 }
 @media screen and (max-width: 1500px) {
-  .carousel-hero-img-wrapper {
+  .carousel-hero-img-wrapper .main-carousel img {
     width: 500px;
     height: 400px;
   }
@@ -940,13 +946,13 @@ footer {
   .micro-form button {
     margin-left: 3rem;
   }
-  .carousel-hero-img-wrapper {
+  .carousel-hero-img-wrapper .main-carousel img {
     width: 450px;
     height: 350px;
   }
 }
 @media screen and (max-width: 1130px) {
-  .carousel-hero-img-wrapper {
+  .carousel-hero-img-wrapper .main-carousel img {
     width: 300px;
     height: 300px;
   }
@@ -1228,7 +1234,7 @@ footer {
   .cta a {
     opacity: 1;
   }
-  .carousel-hero-img-wrapper {
+  .carousel-hero-img-wrapper .main-carousel img {
     margin-bottom: 1rem;
     width: 350px;
     height: 350px;
@@ -1337,7 +1343,7 @@ footer {
   .credit-card-form {
     width: 90%;
   }
-  .carousel-hero-img-wrapper {
+  .carousel-hero-img-wrapper .main-carousel img {
     width: 275px;
     height: 275px;
   }
