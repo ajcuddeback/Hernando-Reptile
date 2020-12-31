@@ -1188,6 +1188,18 @@ footer {
   .ticket a img {
     display: none;
   }
+  
+.o25,
+.ticket h3,
+.s275,
+.ticket p {
+    text-align: center;
+}
+.ticket p {
+     width: 100%;
+}
+
+
   .o25,
   .ticket h3,
   .s275,
@@ -1195,7 +1207,11 @@ footer {
     position: initial;
   }
   .extras {
-    align-items: flex-start;
+    align-items: center;
+  }
+  .extras h1,
+  .extras p {
+      text-align: center;
   }
   .logo {
     margin-left: 6rem;
@@ -1239,4 +1255,5 @@ footer {
       .featured-text p {
           text-align: center;
       }
+      
 }
