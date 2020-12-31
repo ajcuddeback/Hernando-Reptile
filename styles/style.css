@@ -759,6 +759,18 @@ main {
   margin: 0rem 3rem;
 }
 
+.dev-links {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.dev-links a {
+  margin: 1rem 1rem 1rem 0rem;
+}
+.dev-links a i {
+  color: var(--main-orange);
+  font-size: 32px;
+}
+
 /* End of meet the team page */
 
 /* Begin footer styles */
