@@ -64,6 +64,7 @@ a {
 .medium-text {
   font-size: 36px;
 }
+
 /* Navigation */
 header {
   display: flex;
@@ -1009,6 +1010,18 @@ footer {
 
 /* Media querry for devices 790px in width and below */
 @media screen and (max-width: 790px) {
+  .center-text {
+    text-align: center;
+  }
+  .featured-text {
+    margin-left: 0;
+  }
+  .featured-ambassador p {
+    width: 100%;
+  }
+  .donation-left-content {
+    margin-right: 0rem;
+  }
   #toggle,
   label {
     left: 2rem;
