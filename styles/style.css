@@ -364,6 +364,12 @@ main {
   color: #00a9b3;
   margin-left: 2vh;
 }
+.venmo {
+  width: 8rem;
+  height: 8rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
 .paypall-button {
   width: 10rem;
   height: 3rem;
@@ -712,6 +718,7 @@ main {
 .right {
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 }
 .right {
   justify-content: flex-end;
@@ -724,7 +731,7 @@ main {
   height: 200px;
   border: 1px solid black;
   border-radius: 50%;
-  margin: 1rem 3rem;
+  margin: 0rem 3rem;
 }
 
 /* End of meet the team page */
