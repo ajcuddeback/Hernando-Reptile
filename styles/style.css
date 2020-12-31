@@ -1258,5 +1258,12 @@ footer {
       .featured-text p {
           text-align: center;
       }
+      .license-links a img {
+          width: 4.8rem;
+          margin-right: 1rem;
+      }
+      .donation-form input {
+          padding: 0rem;
+      }
       
 }
