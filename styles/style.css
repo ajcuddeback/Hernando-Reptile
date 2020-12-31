@@ -64,6 +64,20 @@ a {
 .medium-text {
   font-size: 36px;
 }
+input,
+textarea {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.4s;
+}
+input:focus,
+textarea:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: 2px solid var(--main-orange);
+  -moz-outline-radius: 5px;
+  border: none;
+  border-radius: 5px;
+}
 
 /* Navigation */
 header {
