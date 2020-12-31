@@ -246,15 +246,56 @@ main {
 /* End of main content */
 
 /* Begin of Adoptable slider */
+/* beginner of my css*/
+
+.prevBtn,
+.nextBtn{
+  cursor: pointer;
+  background: transparent;
+  font-size: 30px;
+  border:none;
+  padding:10px;
+  color:white;
+  margin: 1px;
+}
+#adoptable-controls{
+  position:absolute;
+  top:50%;
+  left:0;
+  transform: translateY(-50%);
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.adoptables-images{
+  width:32%;
+  height:300px;
+  border-radius: 20%;
+
+}
+.button-images{
+  position:relative;
+}
+.reptile{
+  width:20%;
+  height:20vh;
+}
+.reptiles-holder{
+  position:absolute;
+}
+/*End of my css*/
 
 .adoptable-preview h1 {
   text-align: center;
   margin-top: 5rem;
 }
 .adoptable-carousel {
+  overflow: hidden;
+ 
   width: 80%;
   height: 300px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 4rem auto;
 }
 
@@ -606,7 +647,9 @@ main {
   width: 90%;
   margin: 2rem auto 0 auto;
 }
+
 .adopt-images-wrapper {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
