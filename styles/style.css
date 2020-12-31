@@ -1232,4 +1232,11 @@ footer {
       .featured-img img{
           margin-left: 0rem;
       }
+      .featured-text {
+          margin-left: 0rem;
+      }
+      .featured-text h2,
+      .featured-text p {
+          text-align: center;
+      }
 }
