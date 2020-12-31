@@ -1229,4 +1229,7 @@ footer {
       .hero-content-wrapper {
           max-width: 90%;
       }
+      .featured-img img{
+          margin-left: 0rem;
+      }
 }
