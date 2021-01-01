@@ -297,13 +297,10 @@ main {
   margin: 4rem auto;
 }
 .image-holder0 {
-  /* position: relative; */
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   width: 90%;
   margin: 2rem auto 0 auto;
-  /* border: 1px solid black; */
 }
 .reptile {
   width: 350px;
