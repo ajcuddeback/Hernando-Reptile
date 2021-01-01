@@ -278,10 +278,7 @@ main {
   border-radius: 20%;
   margin-left: 2rem;
 }
-.reptile {
-  width: 20%;
-  height: 20vh;
-}
+
 .reptiles-holder {
   position: absolute;
 }
@@ -298,6 +295,20 @@ main {
   width: 70%;
   height: 300px;
   margin: 4rem auto;
+}
+.image-holder0 {
+  /* position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  /* border: 1px solid black; */
+}
+.reptile {
+  width: 350px;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
 
 /* End of adoptable slider */
@@ -649,7 +660,7 @@ main {
   margin: 2rem auto 0 auto;
 }
 
-.adopt-images-wrapper {
+/* .adopt-images-wrapper {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -658,7 +669,7 @@ main {
   margin: 2rem auto 0 auto;
   border: 1px solid black;
   height: 20vh;
-}
+} */
 .adopt-form,
 .volunteer-signup,
 .micro-signup {
