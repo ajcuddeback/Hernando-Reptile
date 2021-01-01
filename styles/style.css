@@ -252,17 +252,11 @@ main {
   width: 200px;
   height: 200px;
 }
-.prevBtn,
-.nextBtn {
-  cursor: pointer;
-  background: transparent;
-  font-size: 30px;
-  border: none;
-  padding: 10px;
-  color: white;
-  margin: 1px;
+.splide__slide img {
+	width : 100%;
+	height: auto;
 }
-#adoptable-controls {
+/* #adoptable-controls {
   position: absolute;
   top: 50%;
   left: 0;
@@ -271,13 +265,13 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.adoptables-images {
+} */
+/* .adoptables-images {
   width: 350px;
   height: 100%;
   border-radius: 20%;
   margin-left: 2rem;
-}
+} */
 .reptile {
   width: 20%;
   height: 20vh;

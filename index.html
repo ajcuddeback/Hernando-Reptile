@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/jpg" href="./images/logo-head.ico" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,700&display=swap"
@@ -16,6 +17,7 @@
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/style.css">
+   
 </head>
 
 <body>
@@ -168,7 +170,7 @@
             <!-- Adoptable animals preview -->
             <section class="adoptable-preview">
                 <h1>Adoptable Animals</h1>
-                <div class="adoptable-carousel">
+                <!-- <div class="adoptable-carousel">
                     <img src="./images/reptiles-adopt.png" id="adopt1" class="adoptables-images">
                     <img src="./images/mamals-adopt.png" id="adopt2" class="adoptables-images">
                     <img src="./images/featured-adoptable.png" id="adopt3" class="adoptables-images">
@@ -179,7 +181,27 @@
                     <img src="./images/reptile-adoptables/reptile-adopt-1.jpg" id="adopt8" class="adoptables-images">
                     <img src="./images/reptile-adoptables/reptile-adopt-0.jpg" id="adopt9" class="adoptables-images">
                     <img src="./images/featured-ambassador.png" id="adopt10" class="adoptables-mages">
+                </div> -->
+
+                <div id="image-slider" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="./images/reptile-adoptables/reptile-adopt-4.jpg" id="adopt5" class="adoptables-images">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./images/reptile-adoptables/reptile-adopt-3.jpg" id="adopt5" class="adoptables-images">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./images/reptile-adoptables/reptile-adopt-2.jpg" id="adopt5" class="adoptables-images">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
+
+
+                
 
 
             </section>
@@ -222,6 +244,7 @@
                     class="fab fa-tiktok"></i>Follow us on TikTok</a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
     <script src="./scripts/script.js " async defer></script>
 </body>
 
