@@ -1,5 +1,4 @@
 const reptilesImages = document.querySelector('.reptile-adopt-images');
-let imageHolder = document.createElement('div');
 const reptilesImgdArr = [
     '../images/reptile-adoptables/reptile-adopt-0.jpg',
     '../images/reptile-adoptables/reptile-adopt-1.jpg',
@@ -26,7 +25,8 @@ const reptilesDesc = [
 window.onload = ()=>{
   
     for(let i = 0; i<reptilesImgdArr.length;i++){
-        imageHolder.classList.add('image-holder'+i);
+        let imageHolder = document.createElement('div');
+        imageHolder.classList.add('image-holder','reptile'+i);
         let lizList = document.createElement('img');
         lizList.setAttribute('src',reptilesImgdArr[i]);
         lizList.setAttribute('data-reptile','lizard'+i)
@@ -34,42 +34,68 @@ window.onload = ()=>{
         imageHolder.appendChild(lizList);
         reptilesImages.appendChild(imageHolder);        
     }
+    console.log(reptilesImages)
 }
-$(document).on('mouseover', '.reptile-adopt-images', function (e) {
 
+
+$(document).ready(function(){
+    let titleAndDesc = document.createElement('div');
+    titleAndDesc.classList.add('title-and-desc');
     const reptileTitles = document.createElement('h2');
     const reptileDescription = document.createElement('p');
-    let reptile = e.target.getAttribute('data-reptile');
-    if (reptile==='lizard0'){
-        reptileTitles.textContent = reptilesTitle[0];
-        reptileDescription.textContent = reptilesDesc[0];
-        imageHolder.appendChild(reptileTitles);
-        imageHolder.appendChild(reptileDescription);
+    $('.reptile-adopt-images').hover(function(e){
+        
+        let reptile = e.target.getAttribute('data-reptile');
+        if (reptile==="lizard0"){
+            let reptile0 = document.querySelector('.reptile0');
+            reptileTitles.textContent = reptilesTitle[0];
+            reptileDescription.textContent = reptilesDesc[0];
+            titleAndDesc.appendChild(reptileTitles);
+            titleAndDesc.appendChild(reptileDescription);
+            reptile0.appendChild(titleAndDesc);
+            console.log(reptile0)
+            
+        }else if (reptile==="lizard1"){
+            let reptile1 = document.querySelector('.reptile1');
+            reptileTitles.textContent = reptilesTitle[1];
+            reptileDescription.textContent = reptilesDesc[1];
+            titleAndDesc.appendChild(reptileTitles);
+            titleAndDesc.appendChild(reptileDescription);
+            reptile1.appendChild(titleAndDesc);
+            console.log(reptile1)
+        }else if (reptile==="lizard2"){
+            let reptile2 = document.querySelector('.reptile2');
+            reptileTitles.textContent = reptilesTitle[2];
+            reptileDescription.textContent = reptilesDesc[2];
+            titleAndDesc.appendChild(reptileTitles);
+            titleAndDesc.appendChild(reptileDescription);
+            reptile2.appendChild(titleAndDesc);
+            console.log(reptile2)
+            console.log('2')
+        }else if (reptile==="lizard3"){
+            let reptile3 = document.querySelector('.reptile3');
+            reptileTitles.textContent = reptilesTitle[3];
+            reptileDescription.textContent = reptilesDesc[3];
+            titleAndDesc.appendChild(reptileTitles);
+            titleAndDesc.appendChild(reptileDescription);
+            reptile3.appendChild(titleAndDesc);
+            console.log(reptile3)
+            console.log('3')
+        }else if (reptile==="lizard4"){
+            let reptile4 = document.querySelector('.reptile0');
+            reptileTitles.textContent = reptilesTitle[4];
+            reptileDescription.textContent = reptilesDesc[4];
+            titleAndDesc.appendChild(reptileTitles);
+            titleAndDesc.appendChild(reptileDescription);
+            reptile4.appendChild(titleAndDesc);
+            console.log(reptile4)
+            console.log('4')
+        }
+        
+        
+    },
+    function(){
+        titleAndDesc.innerHTML = "";
 
-    }else if (reptile==='lizard1'){
-        reptileTitles.textContent = reptilesTitle[1];
-        reptileDescription.textContent = reptilesDesc[1];
-        imageHolder.appendChild(reptileTitles);
-        imageHolder.appendChild(reptileDescription);      
-
-    }else if(reptile==='lizard2'){
-        reptileTitles.textContent = reptilesTitle[2];
-        reptileDescription.textContent = reptilesDesc[2];
-        imageHolder.appendChild(reptileTitles);
-        imageHolder.appendChild(reptileDescription);      
-
-    }else if(reptile==='lizard3'){
-        reptileTitles.textContent = reptilesTitle[3];
-        reptileDescription.textContent = reptilesDesc[3];
-        imageHolder.appendChild(reptileTitles);
-        imageHolder.appendChild(reptileDescription);    
-
-    }else if (reptile==='lizard4'){
-        reptileTitles.textContent = reptilesTitle[4];
-        reptileDescription.textContent = reptilesDesc[4];
-        imageHolder.appendChild(reptileTitles);
-        imageHolder.appendChild(reptileDescription);   
-
-    }
-
-})
+    });
+});

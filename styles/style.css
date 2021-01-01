@@ -279,6 +279,15 @@ main {
 .reptiles-holder {
   position: absolute;
 }
+.image-holder{
+  position:relative;
+}
+.title-and-desc{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color:FFF;
+}
 /*End of my css*/
 
 .adoptable-preview h1 {
