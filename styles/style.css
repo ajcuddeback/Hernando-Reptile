@@ -89,6 +89,18 @@ textarea:focus {
 textarea {
   font-family: Lato;
 }
+.pdf-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pdf-form p {
+  text-align: center;
+}
+.pdf-form button {
+  padding: 0.3rem;
+  cursor: pointer;
+}
 
 /* Navigation */
 header {
