@@ -34,6 +34,9 @@ a {
   font-family: "Lato", sans-serif;
   font-size: 18px;
 }
+.indent {
+  text-indent: 30px;
+}
 .italic {
   font-style: italic;
 }
