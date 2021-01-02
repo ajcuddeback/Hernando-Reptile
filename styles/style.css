@@ -868,6 +868,7 @@ footer {
 
 .footer-content {
   display: flex;
+  justify-content: center;
   padding-top: 4vh;
 }
 .footer-content p,
@@ -880,6 +881,9 @@ footer {
 }
 .footer-content i {
   font-size: 30px;
+}
+.copy-write {
+  text-align: center;
 }
 .fa-instagram {
   background: -webkit-linear-gradient(45deg, #f99847, #de554c, #a84b7a);
