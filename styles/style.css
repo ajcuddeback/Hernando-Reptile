@@ -27,6 +27,9 @@ p {
   font-size: 18px;
   font-family: "Lato", sans-serif;
 }
+.small-text {
+  font-size: 16px;
+}
 a {
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -430,6 +433,8 @@ main {
 .donate-links {
   display: flex;
   align-items: center;
+  width: 95%;
+  margin: 0 auto;
 }
 .donate-links a {
   color: #00a9b3;
@@ -928,6 +933,9 @@ footer {
   p {
     font-size: 16px;
   }
+  .small-text {
+    font-size: 14px;
+  }
   .volunteer-content ul li {
     font-size: 16px;
   }
@@ -1089,7 +1097,7 @@ footer {
 /* Media querry for screen width 900px and below */
 @media screen and (max-width: 902px) {
   footer {
-    height: 250px;
+    height: 300px;
   }
   .footer-content {
     flex-direction: column;
@@ -1373,6 +1381,9 @@ footer {
   }
 }
 @media screen and (max-width: 410px) {
+  .license-links a img {
+    width: 4rem;
+  }
   .credit-card-form {
     width: 90%;
   }
