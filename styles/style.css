@@ -64,7 +64,9 @@ a {
 .margin-top {
   margin-top: 2rem;
 }
-
+.padding-top {
+  padding-top: 1rem;
+}
 .top-dashed-line {
   border-top: 2px dashed var(--main-orange);
 }
