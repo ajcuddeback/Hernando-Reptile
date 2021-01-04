@@ -27,9 +27,15 @@ p {
   font-size: 18px;
   font-family: "Lato", sans-serif;
 }
+.small-text {
+  font-size: 16px;
+}
 a {
   font-family: "Lato", sans-serif;
   font-size: 18px;
+}
+.indent {
+  text-indent: 30px;
 }
 .italic {
   font-style: italic;
@@ -58,7 +64,9 @@ a {
 .margin-top {
   margin-top: 2rem;
 }
-
+.padding-top {
+  padding-top: 1rem;
+}
 .top-dashed-line {
   border-top: 2px dashed var(--main-orange);
 }
@@ -80,6 +88,18 @@ textarea:focus {
 }
 textarea {
   font-family: Lato;
+}
+.pdf-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pdf-form p {
+  text-align: center;
+}
+.pdf-form button {
+  padding: 0.3rem;
+  cursor: pointer;
 }
 
 /* Navigation */
@@ -399,12 +419,13 @@ main {
 }
 .image-holder {
   position: relative; 
+}
+.image-holder0 {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
   margin: 2rem auto 0 auto;
-  justify-content: center;
-   
+  justify-content: center; 
 }
 .reptile {
   width: 350px;
@@ -534,6 +555,8 @@ main {
 .donate-links {
   display: flex;
   align-items: center;
+  width: 95%;
+  margin: 0 auto;
 }
 .donate-links a {
   color: #00a9b3;
@@ -945,13 +968,14 @@ main {
 /* Begin footer styles */
 footer {
   min-width: 100%;
-  height: 15vh;
+  height: 18vh;
   background-color: var(--main-orange);
   box-shadow: 2px 2px 4px 4px black;
 }
 
 .footer-content {
   display: flex;
+  justify-content: center;
   padding-top: 4vh;
 }
 .footer-content p,
@@ -964,6 +988,9 @@ footer {
 }
 .footer-content i {
   font-size: 30px;
+}
+.copy-write {
+  text-align: center;
 }
 .fa-instagram {
   background: -webkit-linear-gradient(45deg, #f99847, #de554c, #a84b7a);
@@ -1021,6 +1048,9 @@ footer {
 @media screen and (max-width: 1300px) {
   p {
     font-size: 16px;
+  }
+  .small-text {
+    font-size: 14px;
   }
   .volunteer-content ul li {
     font-size: 16px;
@@ -1183,7 +1213,7 @@ footer {
 /* Media querry for screen width 900px and below */
 @media screen and (max-width: 902px) {
   footer {
-    height: 250px;
+    height: 300px;
   }
   .footer-content {
     flex-direction: column;
@@ -1473,6 +1503,9 @@ footer {
   }
 }
 @media screen and (max-width: 410px) {
+  .license-links a img {
+    width: 4rem;
+  }
   .credit-card-form {
     width: 90%;
   }
