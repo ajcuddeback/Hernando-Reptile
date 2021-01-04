@@ -267,40 +267,141 @@ main {
 /* End of main content */
 
 /* Begin of Adoptable slider */
+
+
 /* beginner of my css*/
+
+
+/* reptile gallery pop up*/
+.reptile-adopt-images{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  min-height: 100vh;
+  grid-gap: 0.5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.reptilesgallery{
+  overflow: hidden;
+}
+
+.reptile-gallery{
+  object-fit: cover;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.reptile-gallery:hover{
+  transform: scaleX(1.2);
+}
+
+.modal{
+  background: rgba(0,0,0,0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity:0;
+  pointer-events: none;
+  transition: 0.25s ease-out;
+}
+.modal h3{
+  color: white;
+  font-size:1rem ;
+  position: absolute;
+  bottom: 5%;
+  left:50%;
+  transform: translate(-50%, -5%);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.modal p{
+  color: white;
+  font-size:1rem ;
+  position: absolute;
+  bottom: 5%;
+  left:50%;
+  transform: translate(-50%, -5%);
+  text-align: center;
+}
+.modal .full-img{
+  position: absolute;
+  height: 70%;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%) scale(.5);
+  transition: all 0.25s ease-out;
+}
+.modal .full-img.open{ 
+  transform:translate(-50%,-50%) scale(1);
+}
+.modal.open{
+  opacity:1;
+  pointer-events: all;
+}
+
+
+/* end of reptile gallery pop up*/
+.info-page-slider-text{
+  position: absolute;
+  top:30%;
+  left:35%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.information-text{
+  margin-bottom: 2rem;
+}
+.information-image{
+  margin-top: 1rem;
+}
+
+
+/*animation page css*/
+.info-btn{
+  display:flex;
+  position:absolute;
+  top:50%;
+  left:0;
+  transform:translateY(-50%);
+  width:100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.information-slider{
+  display:flex;
+}
+#prev-btn,
+#next-btn{
+  cursor:pointer;
+  background:transparent;
+  font-size:30px;
+  border:none;
+  padding:10px;
+  color: #000;
+}
+
 .main-carousel img {
   width: 200px;
   height: 200px;
 }
-.prevBtn,
-.nextBtn {
-  cursor: pointer;
-  background: transparent;
-  font-size: 30px;
-  border: none;
-  padding: 10px;
-  color: white;
-  margin: 1px;
+.splide__slide img {
+	width : 100%;
+	height: auto;
 }
-#adoptable-controls {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.adoptables-images {
+ 
+ .adoptables-images {
   width: 350px;
   height: 100%;
   border-radius: 20%;
   margin-left: 2rem;
 }
-
-.reptiles-holder {
+.title-and-desc{
   position: absolute;
+  top: 0;
+  left: 0;
+  color:FFF;
 }
 /*End of my css*/
 
@@ -316,11 +417,15 @@ main {
   height: 300px;
   margin: 4rem auto;
 }
+.image-holder {
+  position: relative; 
+}
 .image-holder0 {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
   margin: 2rem auto 0 auto;
+  justify-content: center; 
 }
 .reptile {
   width: 350px;
@@ -562,6 +667,7 @@ main {
   z-index: 999;
   position: fixed;
   transform: translateX(200%);
+
 }
 .information-page-move-in {
   animation: move-in 1s forwards ease-in-out;
@@ -593,7 +699,7 @@ main {
     opacity: 1;
   }
 }
-.information-page button {
+.exit-information-btn {
   position: absolute;
   right: 20rem;
   top: 5rem;
@@ -678,17 +784,7 @@ main {
   width: 90%;
   margin: 2rem auto 0 auto;
 }
-
-/* .adopt-images-wrapper {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 90%;
-  margin: 2rem auto 0 auto;
-  border: 1px solid black;
-  height: 20vh;
-} */
+ 
 .adopt-form,
 .volunteer-signup,
 .micro-signup {
@@ -842,12 +938,11 @@ main {
 .lauren {
   align-self: flex-start;
 }
-.right {
-  justify-content: flex-end;
-}
+
 .info {
   width: 50%;
 }
+
 .image {
   width: 200px;
   height: 200px;
@@ -1165,6 +1260,9 @@ footer {
 
 /* Media querry for devices 790px in width and below */
 @media screen and (max-width: 790px) {
+  .modal .full-img {
+    height: 50%;
+  }
   .carousel-hero-img-wrapper .main-carousel img {
     width: 360px;
     height: 300px;
@@ -1348,6 +1446,9 @@ footer {
   }
 }
 @media screen and (max-width: 520px) {
+  .modal .full-img {
+    height: 30%;
+  }
   .volunteer-carousel,
   .micro-slideshow {
     margin-left: 4rem;
@@ -1465,6 +1566,9 @@ footer {
 }
 
 @media screen and (max-width: 350px) {
+  .modal .full-img {
+    height: 20%;
+  }
   .logo {
     margin-left: 3rem;
   }
