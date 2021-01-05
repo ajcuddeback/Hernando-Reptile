@@ -44,26 +44,27 @@ a {
   font-weight: 900;
 }
 .button {
-  position: relative;
-  top: 0;
   background-color: var(--main-orange);
   color: white;
   border-radius: 5px;
-  z-index: -1;
+  transform: translateY(0px);
 }
 .button:hover {
   transition: 0.1s ease-in-out;
   background-color: #b34e0b;
-  top: 2px;
+  transform: translateY(2px);
 }
 .button:active {
-  top: 4px;
+  transform: translateY(4px);
 }
 a {
   text-decoration: none;
 }
 .margin-top {
   margin-top: 2rem;
+}
+.margin-bottom {
+  margin-bottom: 2rem;
 }
 .padding-top {
   padding-top: 1rem;
@@ -275,21 +276,19 @@ main {
 .reptile-adopt-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  min-height: 100vh;
   grid-gap: 0.5rem;
-  width: 80%;
-  margin: 0 auto;
+  justify-items: center;
 }
 .reptilesgallery {
   overflow: hidden;
 }
 
-.reptile-gallery {
+.adoptable-image {
   object-fit: cover;
   transition: all 0.3s ease-out;
   cursor: pointer;
 }
-.reptile-gallery:hover {
+.adoptable-image:hover {
   transform: scaleX(1.2);
 }
 
@@ -337,6 +336,7 @@ main {
 .modal.open {
   opacity: 1;
   pointer-events: all;
+  z-index: 99;
 }
 
 /* end of reptile gallery pop up*/
@@ -779,6 +779,10 @@ main {
 .individual-adopt-content p {
   width: 90%;
   margin: 2rem auto 0 auto;
+}
+#image-instructions {
+  text-align: center;
+  margin: 2rem 0 2rem 0;
 }
 
 .adopt-form,
@@ -1563,7 +1567,7 @@ footer {
 
 @media screen and (max-width: 350px) {
   .modal .full-img {
-    height: 20%;
+    height: 40%;
   }
   .logo {
     margin-left: 3rem;

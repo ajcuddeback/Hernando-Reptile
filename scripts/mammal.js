@@ -2,10 +2,10 @@ const modal = document.querySelector('.modal');
 const fullImage = document.querySelector('.full-img');
 const captionTitle = document.querySelector('.caption-title');
 const captionDesc = document.querySelector('.caption-desc');
-const mammalGallery = document.querySelectorAll('.mammal-gallery');
+const mammalGallery = document.querySelectorAll('.adoptable-image');
 
-mammalGallery.forEach(mammal=>{
-    mammal.addEventListener('click', (e)=>{
+mammalGallery.forEach(mammal => {
+    mammal.addEventListener('click', (e) => {
         modal.classList.add('open');
         fullImage.classList.add('open');
         const originalSrc = mammal.getAttribute('data-image');
@@ -15,12 +15,12 @@ mammalGallery.forEach(mammal=>{
         captionTitle.textContent = dataTitle;
         captionDesc.textContent = dataDesc;
         console.log(captionTitle);
-        console.log(dataDesc)      
+        console.log(dataDesc)
     });
 });
 
-modal.addEventListener('click',(e)=>{
-    if (e.target.classList.contains('modal')){
+modal.addEventListener('click', (e) => {
+    if (e.target.classList.contains('modal')) {
         modal.classList.remove('open');
         fullImage.classList.remove('open');
     }
