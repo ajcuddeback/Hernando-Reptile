@@ -34,11 +34,3 @@ const carouselSlide = function () {
     setTimeout('carouselSlide()', 5000);
 }
 window.onload = carouselSlide;
-
-
-
-
-
-window.addEventListener( 'DOMContentLoaded', function () {
-    new Splide('#image-slider').mount();
-} );

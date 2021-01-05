@@ -9,8 +9,8 @@
     <link rel="shortcut icon" type="image/jpg" href="./images/logo-head.ico" />
     <!-- <meta name="description"
         content="Hernando Reptile and Exotics Rescue, Inc. provides shelter, rehabilitation and adoption services for non-native reptile and exotic animals across Florida."> -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,700&display=swap"
         rel="stylesheet">
@@ -18,7 +18,18 @@
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/style.css">
-   
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#image-slider', {
+                'cover': true,
+                'heightRatio': 0.5,
+                'height': '30rem',
+                'type': 'loop',
+                'autoplay': 1000
+            }).mount();
+        });
+    </script>
+
 </head>
 
 <body>
@@ -171,30 +182,17 @@
             <!-- Adoptable animals preview -->
             <section class="adoptable-preview">
                 <h1>Adoptable Animals</h1>
-                <!-- <div class="adoptable-carousel">
-                    <img src="./images/reptiles-adopt.png" id="adopt1" class="adoptables-images">
-                    <img src="./images/mamals-adopt.png" id="adopt2" class="adoptables-images">
-                    <img src="./images/featured-adoptable.png" id="adopt3" class="adoptables-images">
-                    <img src="./images/birds-adopt.png" id="adopt4" class="adoptables-images">
-                    <img src="./images/reptile-adoptables/reptile-adopt-4.jpg" id="adopt5" class="adoptables-images">
-                    <img src="./images/reptile-adoptables/reptile-adopt-3.jpg" id="adopt6" class="adoptables-images">
-                    <img src="./images/reptile-adoptables/reptile-adopt-2.jpg" id="adopt7" class="adoptables-images">
-                    <img src="./images/reptile-adoptables/reptile-adopt-1.jpg" id="adopt8" class="adoptables-images">
-                    <img src="./images/reptile-adoptables/reptile-adopt-0.jpg" id="adopt9" class="adoptables-images">
-                    <img src="./images/featured-ambassador.png" id="adopt10" class="adoptables-mages">
-                </div> -->
-
                 <div id="image-slider" class="splide">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <img src="./images/reptile-adoptables/reptile-adopt-4.jpg" id="adopt5" class="adoptables-images">
+                                <img src="./images/birds-adoptables/bird-adopt-1.jpeg">
                             </li>
                             <li class="splide__slide">
-                                <img src="./images/reptile-adoptables/reptile-adopt-3.jpg" id="adopt5" class="adoptables-images">
+                                <img src="./images/reptile-adoptables/reptile-adopt-0.jpg">
                             </li>
                             <li class="splide__slide">
-                                <img src="./images/reptile-adoptables/reptile-adopt-2.jpg" id="adopt5" class="adoptables-images">
+                                <img src="./images/reptile-adoptables/reptile-adopt-1.jpg">
                             </li>
                         </ul>
                     </div>
@@ -202,7 +200,7 @@
 
 
 
-                
+
 
 
             </section>
