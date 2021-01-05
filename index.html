@@ -21,8 +21,11 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('#image-slider', {
+                rewind: true,
+                perPage: 1,
+                perMove: 1,
                 'cover': true,
-                'heightRatio': 0.5,
+                'heightRatio': 0.3,
                 'height': '30rem',
                 'type': 'loop',
                 'autoplay': 1000
@@ -193,6 +196,15 @@
                             </li>
                             <li class="splide__slide">
                                 <img src="./images/reptile-adoptables/reptile-adopt-1.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./images/reptile-adoptables/reptile-adopt-2.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./images/reptile-adoptables/reptile-adopt-3.jpg">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="./images/reptile-adoptables/reptile-adopt-4.jpg">
                             </li>
                         </ul>
                     </div>
