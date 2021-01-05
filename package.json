@@ -1,0 +1,27 @@
+{
+  "name": "hernando-reptile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajcuddeback/Hernando-Reptile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajcuddeback/Hernando-Reptile/issues"
+  },
+  "homepage": "https://github.com/ajcuddeback/Hernando-Reptile#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "stripe": "^8.129.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
