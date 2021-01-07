@@ -41,7 +41,7 @@
         </div>
         <!-- Navigation -->
         <nav>
-            <label for="toggle">&#9776;</label>
+            <label for="toggle" class="menu-label">&#9776;</label>
             <input type="checkbox" id="toggle">
             <div class="menu">
                 <a href="../sub-pages/donation.html">Donate</a>
@@ -65,9 +65,11 @@
                     amphibians and exotic non-native animals! Every penny makes a difference!</p>
                 <div class="donation-form">
                     <h2>Enter your donation</h2>
-                    <input type="text" name="donation-amount" id="donation-amount"
-                        onkeypress="return isNumberKey(this, event);" placeholder="10.00">
-                    <button type="submit" id="donate-button" class="button">Donate Now</button>
+                    <form action="./payment.html" class="donation-form">
+                        <input type="text" name="donation-amount" id="donation"
+                            onkeypress="return isNumberKey(this, event);" placeholder="10.00">
+                        <button type="submit" class="submit">Donate Now</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -244,7 +246,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="../scripts/script.js " async defer></script>
+    <script src="../scripts/donation-form.js"></script>
 </body>
 
 </html>

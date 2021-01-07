@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
+    <link rel="stylesheet" href="../styles/payment.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+    <script src="../scripts/payment.js" defer></script>
 </head>
 
 <body>
@@ -23,7 +27,7 @@
         </div>
         <!-- Navigation -->
         <nav>
-            <label for="toggle">&#9776;</label>
+            <label for="toggle" class="menu-label">&#9776;</label>
             <input type="checkbox" id="toggle">
             <div class="menu">
                 <a href="../sub-pages/donation.html">Donate</a>
@@ -39,13 +43,26 @@
     <!-- Main Content -->
     <main>
         <div class="content-wrapper payment-content">
-            <h1>Your Donation</h1>
-            <p>You are one step away to changing the life of our animals</p>
-
-            <!-- Credit Card form -->
-            <div class="credit-card-form">
-
+            <div class="payment-form-wrapper">
+                <h2>Your Donation</h2>
+                <p>You are one step away from helping the lives of our reptiles</p>
+                <form id="payment-form">
+                    <input type="text" id="email" placeholder="Email address" />
+                    <div id="card-element">
+                        <!--Stripe.js injects the Card Element-->
+                    </div>
+                    <button id="submit">
+                        <div class="spinner hidden" id="spinner"></div>
+                        <span id="button-text">Pay</span>
+                    </button>
+                    <p id="card-error" role="alert"></p>
+                    <p class="result-message hidden">
+                        Payment succeeded. Thankyou for your generous donation!
+                    </p>
+                </form>
             </div>
+
+        </div>
         </div>
     </main>
 
@@ -64,9 +81,6 @@
         </div>
         <p class="margin-top copy-write">&#169;2021, Hernando Reptile and Exotics Rescue, Inc.</p>
     </footer>
-
-    <!-- Scripts -->
-    <script src="../scripts/script.js " async defer></script>
 </body>
 
 </html>

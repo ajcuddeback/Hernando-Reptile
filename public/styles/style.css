@@ -142,7 +142,7 @@ nav {
   color: #cc6018;
   text-shadow: 1px 1px #cc6018;
 }
-label {
+.menu-label {
   margin: 0 40px 0 0;
   font-size: 26px;
   line-height: 70px;
@@ -1144,7 +1144,7 @@ footer {
     margin-left: 0;
     margin-top: 1rem;
   }
-  label {
+  .menu-label {
     display: block;
     cursor: pointer;
   }
@@ -1164,7 +1164,7 @@ footer {
     height: 100vh;
   }
   #toggle,
-  label {
+  .menu-label {
     position: relative;
     left: 6rem;
     bottom: 1rem;
@@ -1283,7 +1283,7 @@ footer {
     margin-right: 0rem;
   }
   #toggle,
-  label {
+  .menu-label {
     left: 2rem;
   }
   .micro-signup-content,
