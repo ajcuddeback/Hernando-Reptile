@@ -30,4 +30,8 @@ app.post("/create-payment-intent", async (req, res) => {
     });
 });
 
-app.listen(3000, () => console.log('Node server listening on port 4242!'));
+const PORT = process.env.PORT || 300;
+
+app.listen(PORT, () => {
+    console.log(`API server now on port ${PORT}`)
+});
