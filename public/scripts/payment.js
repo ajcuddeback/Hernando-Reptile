@@ -31,18 +31,18 @@ fetch("/create-payment-intent", {
 
         var style = {
             base: {
-                color: "#32325d",
+                color: "#ff791f",
                 fontFamily: 'Arial, sans-serif',
                 fontSmoothing: "antialiased",
                 fontSize: "16px",
                 "::placeholder": {
-                    color: "#32325d"
+                    color: "#ff791f"
                 }
             },
             invalid: {
                 fontFamily: 'Arial, sans-serif',
-                color: "#fa755a",
-                iconColor: "#fa755a"
+                color: "#ff791f",
+                iconColor: "#ff791f"
             }
         };
 

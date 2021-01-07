@@ -508,7 +508,7 @@ main {
   color: black;
   margin-bottom: 1rem;
 }
-.donation-form {
+.donation-form-wrapper .donation-form {
   padding: 1rem;
   border: 1px solid black;
   border-radius: 10px;
@@ -516,8 +516,9 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.donation-form h2 {
+.donation-form-wrapper h2 {
   margin-bottom: 30px;
+  text-align: center;
 }
 .donation-form input,
 .donation-form button {
@@ -1320,7 +1321,7 @@ footer {
   header a img {
     right: 7rem;
   }
-  .donation-form h2 {
+  .donation-form-wrapper h2 {
     margin-bottom: 25px;
   }
   .micro-slideshow,
@@ -1589,7 +1590,7 @@ footer {
     text-align: center;
   }
   .license-links a img {
-    width: 4.8rem;
+    width: 3.5rem;
     margin-right: 1rem;
   }
   .donation-form input {
@@ -1605,5 +1606,16 @@ footer {
   }
   .donation-right-content h2 {
     margin-top: 0rem;
+  }
+  .venmo {
+    width: 5rem;
+    height: 5rem;
+  }
+  .paypall-button {
+    width: 7rem;
+    height: 2rem;
+  }
+  .donation-form {
+    width: 15remrem;
   }
 }
