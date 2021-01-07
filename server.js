@@ -1,7 +1,7 @@
 const express = require("express");
 // require('dotenv').config();
-const path = require('path');
 const app = express();
+const htmlRoutes = require('./routes/htmlRoutes')
 
 // const stripeSecretKey = process.env.STRIPE_SECRET_KEY
 // console.log(stripeSecretKey)
@@ -32,6 +32,7 @@ app.post("/create-payment-intent", async (req, res) => {
     });
 });
 
+app.use('/', htmlRoutes);
 
 const PORT = process.env.PORT || 3000;
 
