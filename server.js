@@ -1,5 +1,6 @@
 const express = require("express");
 require('dotenv').config();
+const path = require('path');
 const app = express();
 
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY
@@ -28,6 +29,12 @@ app.post("/create-payment-intent", async (req, res) => {
     res.send({
         clientSecret: paymentIntent.client_secret
     });
+});
+
+router.get('/', (req, res) => {
+    // res.sendFile() will respond with a html page to display in the browser, 
+    // this will tellthem where to fine the file we want our server to read and send it back to client
+    res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
 const PORT = process.env.PORT || 3000;
