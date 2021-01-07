@@ -31,7 +31,7 @@ app.post("/create-payment-intent", async (req, res) => {
     });
 });
 
-router.get('/', (req, res) => {
+app.get('/', (req, res) => {
     // res.sendFile() will respond with a html page to display in the browser, 
     // this will tellthem where to fine the file we want our server to read and send it back to client
     res.sendFile(path.join(__dirname, './public/index.html'));
