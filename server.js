@@ -4,7 +4,6 @@ const app = express();
 const htmlRoutes = require('./routes/htmlRoutes')
 
 const stripeSecretKey = process.env.STRIPE_SECRET_TEST_KEY
-console.log(stripeSecretKey)
 
 // This is your real test secret API key.
 const stripe = require("stripe")(`${stripeSecretKey}`);
