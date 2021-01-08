@@ -7,7 +7,7 @@ const htmlRoutes = require('./routes/htmlRoutes')
 // console.log(stripeSecretKey)
 
 // This is your real test secret API key.
-const stripe = require("stripe")('sk_live_GcfYS1P1Gel1tBVuPf1GDCxF005dCDmEfE');
+const stripe = require("stripe")('sk_test_nsvO1w6m6m589iDBav7kdDIx00mSkpmsGC');
 
 app.use(express.static("public"));
 app.use(express.json());
