@@ -1,13 +1,13 @@
 const express = require("express");
-// require('dotenv').config();
+require('dotenv').config();
 const app = express();
 const htmlRoutes = require('./routes/htmlRoutes')
 
-// const stripeSecretKey = process.env.STRIPE_SECRET_KEY
-// console.log(stripeSecretKey)
+const stripeSecretKey = process.env.STRIPE_SECRET_TEST_KEY
+console.log(stripeSecretKey)
 
 // This is your real test secret API key.
-const stripe = require("stripe")('sk_test_nsvO1w6m6m589iDBav7kdDIx00mSkpmsGC');
+const stripe = require("stripe")(`${stripeSecretKey}`);
 
 app.use(express.static("public"));
 app.use(express.json());
