@@ -4,7 +4,7 @@ const router = require('express').Router();
 router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../../public/index.html'));
 });
-router.get('/adopt', (req, res) => {
+router.get('/adoptables', (req, res) => {
     res.sendFile(path.join(__dirname, '../../public/sub-pages/adoptables.html'));
 });
 router.get('/birds', (req, res) => {
