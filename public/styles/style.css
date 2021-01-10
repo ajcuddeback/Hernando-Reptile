@@ -648,11 +648,23 @@ main {
 .credit-card-form {
   width: 60%;
   margin: 0 auto;
-  height: 80vh;
+  height: 50vh;
   border: 1px solid black;
   background: white;
-  margin-bottom: 5rem;
   border-radius: 10px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.secure-payment p {
+  font-size: 10px;
+  display: inline;
+}
+.donate-links-payment {
+  margin-bottom: 5rem;
+  justify-content: center;
 }
 
 /* Begin of adoptables page */
@@ -1432,6 +1444,11 @@ footer {
   }
 }
 @media screen and (max-width: 590px) {
+  .card-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .donation-hero-section {
     padding: 2rem;
   }
@@ -1613,7 +1630,6 @@ footer {
   }
   .paypall-button {
     width: 7rem;
-    height: 2rem;
   }
   .donation-form {
     width: 15rem;
