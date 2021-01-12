@@ -168,7 +168,7 @@ button:disabled {
 }
 @media only screen and (max-width: 560px) {
   .payment-form {
-    min-width: 300px;
+    min-width: 350px;
     width: 50vh;
   }
 }
