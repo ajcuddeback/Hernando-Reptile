@@ -10,7 +10,7 @@ router.get('/adoptables', (req, res) => {
 router.get('/birds', (req, res) => {
     res.sendFile(path.join(__dirname, '../../public/sub-pages/birds-adopt.html'));
 });
-router.get('/contact', (req, res) => {
+router.get('/contact-us', (req, res) => {
     res.sendFile(path.join(__dirname, '../../public/sub-pages/contact.html'));
 });
 router.get('/donate', (req, res) => {
@@ -25,7 +25,7 @@ router.get('/team', (req, res) => {
 router.get('/payment', (req, res) => {
     res.sendFile(path.join(__dirname, '../../public/sub-pages/payment.html'));
 });
-router.get('/PIT', (req, res) => {
+router.get('/pit-microchipping-1', (req, res) => {
     res.sendFile(path.join(__dirname, '../../public/sub-pages/PIT-micro.html'));
 });
 router.get('/reptiles', (req, res) => {
