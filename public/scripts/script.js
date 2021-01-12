@@ -15,7 +15,6 @@ const adoptablesAnimals = [
     '../images/reptile-adoptables/reptile-adopt-1.jpg',
     '../images/reptile-adoptables/reptile-adopt-2.jpg',
     '../images/reptile-adoptables/reptile-adopt-3.jpg',
-    '../images/reptile-adoptables/reptile-adopt-4.jpg',
     '../images/featured-adoptable.png',
     '../images/mamals-adopt.png',
     '../images/reptiles-adopt.png',
