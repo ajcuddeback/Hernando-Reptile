@@ -1,5 +1,5 @@
 // A reference to Stripe.js initialized with your real test publishable API key.
-var stripe = Stripe("pk_test_ckIzrNAjCL9X0qRNfYrGJ6ve002ACXFjcK");
+var stripe = Stripe("pk_live_fz5ZJ6xDl01SSmOAH2NI6BN400RLq1j28u");
 
 let payButton = document.querySelector("#button-text");
 
