@@ -1,8 +1,7 @@
 const express = require("express");
-const sslRedirect = require('heroku-ssl-redirect')
 require('dotenv').config();
 const app = express();
-app.use(sslRedirect());
+
 const htmlRoutes = require('./routes/htmlRoutes')
 
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY
