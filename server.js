@@ -1,9 +1,9 @@
 const express = require("express");
-const enforce = require('express-sslify');
+
 require('dotenv').config();
 const app = express();
-enforce.HTTPS({ trustProtoHeader: true });
-app.use(enforce.HTTPS());
+
+
 
 const htmlRoutes = require('./routes/htmlRoutes')
 
