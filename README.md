@@ -22,4 +22,4 @@
 
 [Deployed Hernando Reptile](https://www.hernandoreptile.org)
 
-![Weather App](./images/note-taker.png)
+![Weather App](./public/images/home-img-prev.png)
