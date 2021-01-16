@@ -74,6 +74,7 @@ a {
 }
 .medium-text {
   font-size: 36px;
+  text-align: center;
 }
 input,
 textarea {
@@ -273,7 +274,9 @@ main {
 /* beginner of my css*/
 
 /* reptile gallery pop up*/
-.reptile-adopt-images {
+.reptile-adopt-images,
+.birds-adopt-images,
+.mammal-adopt-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 0.5rem;
@@ -1523,6 +1526,9 @@ footer {
 @media screen and (max-width: 410px) {
   .license-links a img {
     width: 4rem;
+  }
+  .license-links {
+    margin-left: 3.5rem;
   }
   .credit-card-form {
     width: 90%;
