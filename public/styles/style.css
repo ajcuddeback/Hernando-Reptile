@@ -121,6 +121,7 @@ header {
 header a img {
   border-radius: 5px;
   margin-left: 3rem;
+  width: 150px;
 }
 
 nav {
@@ -1271,6 +1272,7 @@ footer {
   header a img {
     position: relative;
     right: 3rem;
+    width: 150px;
   }
 }
 
@@ -1439,6 +1441,7 @@ footer {
   }
   header a img {
     right: 2.5rem;
+    width: 100px;
   }
   .volunteer-carousel,
   .micro-slideshow {
