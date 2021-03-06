@@ -17,7 +17,7 @@
     <title>Home | Hernando Reptile and Exotics Rescue Inc | Spring Hill FL</title>
     <link rel="shortcut icon" type="image/jpg" href="./images/logo-head.ico" />
     <meta name="description"
-        content="Hernando Reptile and Exotics Rescue, Inc. provides shelter, rehabilitation and adoption services for non-native reptile and exotic animals across Florida.">
+        content="Hernando Reptile and Exotics Rescue, Inc. provides shelter, rehabilitation and adoption services for non-native reptiles including turtles and exotic animals across Florida.">
     <meta property="og:title" content="Home | Hernando Reptile and Exotics Rescue Inc | Spring Hill FL">
     <meta property="og:description"
         content="Hernando Reptile and Exotics Rescue, Inc. provides shelter, rehabilitation and adoption services for non-native reptile and exotic animals across Florida.  We specialize in education of adults and children in responsible pet ownership to help prevent release of invasive species into the wild.">
@@ -268,5 +268,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
     <script src="./scripts/script.js" async defer></script>
 </body>
+
+<script>
+    (function () {
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register('./service-worker.js')
+                .then(() => console.log("Service worker registered successfully"))
+                .catch(error => console.log("Service worker registration failed: ", error))
+        }
+    })();
+</script>
 
 </html>

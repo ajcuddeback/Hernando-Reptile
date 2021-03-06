@@ -292,7 +292,7 @@ main {
   cursor: pointer;
 }
 .adoptable-image:hover {
-  transform: scaleX(1.2);
+  transform: scale(1.2);
 }
 
 .modal {
