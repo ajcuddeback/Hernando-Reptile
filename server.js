@@ -50,7 +50,6 @@ app.post("/create-payment-intent", async (req, res) => {
 });
 
 app.use(routes);
-app.use('/', htmlRoutes);
 
 const PORT = process.env.PORT || 3000;
 
