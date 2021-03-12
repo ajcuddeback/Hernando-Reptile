@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const routes = require('./routes');
-const sequelize = require('./config');
+const sequelize = require('./config/connection');
 
 require('dotenv').config();
 
@@ -20,8 +20,6 @@ const sess = {
 }
 
 app.use(session(sess));
-
-const htmlRoutes = require('./routes/htmlRoutes')
 
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY
 
