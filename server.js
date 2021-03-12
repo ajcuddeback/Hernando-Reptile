@@ -1,9 +1,25 @@
 const express = require("express");
+const app = express();
+const routes = require('./routes');
+const sequelize = require('./config');
 
 require('dotenv').config();
-const app = express();
 
+const session = require('express-session');
 
+const SequelizeStore = require('connect-session-sequelize')(session.Store)
+
+const sess = {
+    secret: process.env.SECRET,
+    cookie: {httpOnly: false},
+    resave: false,
+    saveUninitialized: false,
+    store: new SequelizeStore({
+        db: sequelize,
+    })
+}
+
+app.use(session(sess));
 
 const htmlRoutes = require('./routes/htmlRoutes')
 
@@ -14,11 +30,9 @@ const stripe = require("stripe")(`${stripeSecretKey}`);
 
 app.use(express.static("public"));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 const calculateOrderAmount = items => {
-    // Replace this constant with a calculation of the order's amount
-    // Calculate the order total on the server to prevent
-    // people from directly manipulating the amount on the client
     return items[0].price;
 };
 
@@ -35,10 +49,11 @@ app.post("/create-payment-intent", async (req, res) => {
     });
 });
 
+app.use(routes);
 app.use('/', htmlRoutes);
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
-    console.log(`API server now on port ${PORT}`)
+sequelize.sync({ force: false }).then(() => {
+    app.listen(PORT, () => console.log(`App is listening on port ${PORT}`));
 });
