@@ -12,7 +12,7 @@ Animals.init(
             autoIncrement: true
         },
         animal_type: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: false
         },
         name: {
@@ -33,7 +33,7 @@ Animals.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'user'
+        modelName: 'animals'
     }
 )
 
