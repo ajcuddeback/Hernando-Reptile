@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const routes = require('./routes');
 const sequelize = require('./config/connection');
+const fileUpload = require('express-fileupload');
 
 require('dotenv').config();
 
