@@ -23,7 +23,7 @@ async function addAnimalHandler(event) {
     } else {
         console.log('ERRORRRRRR')
     }
-}
+};
 
 async function getAnimals(event) {
     const response = await fetch('/api/animals', {
@@ -45,17 +45,40 @@ async function getAnimals(event) {
                     const typeHeading = document.createElement('h3');
                     const nameHeading = document.createElement('h3');
                     const infoHeading = document.createElement('h3');
-                    const deleteHeading = document.createElement('h3');
+
+                    const deleteHeading = document.createElement('i');
+                    deleteHeading.className = "fas fa-trash-alt";
+                    deleteHeading.setAttribute('id', `${animal.id}`)
 
                     typeHeading.textContent = animal.animal_type;
                     nameHeading.textContent = animal.name;
                     infoHeading.textContent = animal.about;
-                    deleteHeading.textContent = 'delete';
 
                     typeWrapper.append(typeHeading);
                     nameWrapper.append(nameHeading);
                     infoWrapper.append(infoHeading);
                     deleteWrapper.append(deleteHeading);
+                })
+
+                async function deleteAnimal(e) {
+                    const id = e.target.getAttribute('id');
+
+                    const response = await fetch(`/api/animals/${id}`, {
+                        method: 'DELETE',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    })
+
+                    if(response.ok) {
+                        document.location.reload();
+                    } else {
+                        console.log('error!')
+                    }
+                }
+
+                document.querySelectorAll('.fa-trash-alt').forEach(button => {
+                    button.addEventListener('click', deleteAnimal)
                 })
             })
     }
