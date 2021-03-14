@@ -10,11 +10,31 @@
 </head>
 
 <body>
+    <div class="current-animals">
+
+    </div>
+
     <div class="file-uploader">
-        <label for="file-button" class="pretty-label">Product Image:</label>
-        <img id="create-image">
-        <progress value="0" max="100" id="uploader">0%</progress>
-        <input type="file" value="upload" id="file-button" />
+        <form class="add-animal-form">
+
+            <label for="animal-types">Animal Type:</label>
+            <select name="animal-types" id="animal-types">
+                <option value="mammals">Mammal</option>
+                <option value="reptiles">Reptile</option>
+                <option value="birds">Bird</option>
+            </select>
+
+            <label for="animal-types">Animal Name:</label>
+            <input type="text" name="name" id="animal-name">
+
+            <label for="animal-types">Animal Info:</label>
+            <input type="text" name="name" id="animal-info">
+
+            <label for="file-button" class="pretty-label">Animal Image:</label>
+            <img id="create-image">
+            <progress value="0" max="100" id="uploader">0%</progress>
+            <input type="file" value="upload" id="file-button" />
+        </form>
     </div>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
