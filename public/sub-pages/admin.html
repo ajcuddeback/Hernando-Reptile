@@ -10,12 +10,27 @@
 </head>
 
 <body>
-    <div class="current-animals">
+    <header>
+        <h2>Welcome back Jesse</h2>
+    </header>
 
+    <div class="current-animals">
+        <div class="type-wrapper">
+            <h3>Animal Type</h3>
+        </div>
+        <div class="name-wrapper">
+            <h3>Animal Name</h3>
+        </div>
+        <div class="info-wrapper">
+            <h3>Animal Info</h3>
+        </div>
+        <div class="delete-wrapper">
+            <h3>Delete?</h3>
+        </div>
     </div>
 
     <div class="file-uploader">
-        <form class="add-animal-form">
+        <form id="add-animal-form">
 
             <label for="animal-types">Animal Type:</label>
             <select name="animal-types" id="animal-types">
@@ -34,6 +49,8 @@
             <img id="create-image">
             <progress value="0" max="100" id="uploader">0%</progress>
             <input type="file" value="upload" id="file-button" />
+
+            <button type="submit" id="sumbit">Submit</button>
         </form>
     </div>
 
@@ -53,6 +70,7 @@
         firebase.initializeApp(firebaseConfig);
     </script>
     <script src="../scripts/upload-file.js"></script>
+    <script src="../scripts/add-animal.js"></script>
 </body>
 
 </html>

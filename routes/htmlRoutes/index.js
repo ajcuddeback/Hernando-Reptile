@@ -34,5 +34,7 @@ router.get('/reptiles', (req, res) => {
 router.get('/volunteer', (req, res) => {
     res.sendFile(path.join(__dirname, '../../public/sub-pages/volunteer.html'));
 });
-
+router.get('/admin', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../public/sub-pages/admin.html'))
+});
 module.exports = router;
