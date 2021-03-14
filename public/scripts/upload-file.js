@@ -1,20 +1,32 @@
-let firebaseConfig = {
-    apiKey: "AIzaSyC8mSnRMFQlnpLjErWGj02p1lZe-odxSrg",
-    authDomain: "hernando-reptile.firebaseapp.com",
-    databaseURL: "https://hernando-reptile-default-rtdb.firebaseio.com",
-    projectId: "hernando-reptile",
-    storageBucket: "hernando-reptile.appspot.com",
-    messagingSenderId: "655419173124",
-    appId: "1:655419173124:web:c0bbc29423cae1e0cf8851"
-};
-firebase.initializeApp(firebaseConfig);
-
 let uploader = document.getElementById('uploader');
-let fileButton = document.getElementById('fileButton');
+let fileButton = document.getElementById('file-button');
 
 fileButton.addEventListener('change', function (e) {
-    let file = e.target.files[0];
-    let storageRef = firebase.storage().ref('images/' + file.name);
+    // get file
+    const file = e.target.files[0];
+    // create storage ref: ex. ('folder_name/file_name)
+    const storageRef = firebase.storage().ref('images/' + file.name);
+    // upload file
+    const task = storageRef.put(file);
+    //update progress bar
+    task.on('state_changed',
 
-    storageRef.put(file);
-})
+        function progress(snapshot) {
+            const percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+            uploader.value = percentage;
+        },
+        function error(err) {
+            if (err) throw err;
+        },
+        function complete() {
+            firebase.storage().ref('images/' + file.name).getDownloadURL()
+                .then((url) => {
+                    // delete console.log before production
+                    console.log(url)
+                    // inserted into an <img> element
+                    var img = document.getElementById('create-image');
+                    img.setAttribute('src', url);
+                })
+        }
+    );
+});
