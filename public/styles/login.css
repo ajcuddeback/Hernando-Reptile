@@ -1,0 +1,15 @@
+h2 {
+    text-align: center;
+    margin-top: 2rem;
+}
+#signin-form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.login {
+    width: 5rem;
+    margin-top: 1rem;
+}

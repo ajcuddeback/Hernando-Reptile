@@ -11,6 +11,7 @@
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/admin.css">
 </head>
 
 <body>
@@ -35,21 +36,6 @@
         </nav>
     </header>
 
-    <div class="current-animals">
-        <div class="type-wrapper">
-            <h3>Animal Type</h3>
-        </div>
-        <div class="name-wrapper">
-            <h3>Animal Name</h3>
-        </div>
-        <div class="info-wrapper">
-            <h3>Animal Info</h3>
-        </div>
-        <div class="delete-wrapper">
-            <h3>Delete?</h3>
-        </div>
-    </div>
-
     <div class="file-uploader">
         <form id="add-animal-form">
 
@@ -59,21 +45,47 @@
                 <option value="reptiles">Reptile</option>
                 <option value="birds">Bird</option>
             </select>
+            <br>
+            <br>
 
             <label for="animal-types">Animal Name:</label>
             <input type="text" name="name" id="animal-name">
+            <br>
+            <br>
 
             <label for="animal-types">Animal Info:</label>
             <input type="text" name="name" id="animal-info">
+            <br>
+            <br>
 
             <label for="file-button" class="pretty-label">Animal Image:</label>
-            <img id="create-image">
+
             <progress value="0" max="100" id="uploader">0%</progress>
             <input type="file" value="upload" id="file-button" />
+            <br>
+            <img id="create-image">
+            <br>
+            <br>
 
-            <button type="submit" id="sumbit">Submit</button>
+            <button type="submit" class="button" id="submit">Submit</button>
         </form>
     </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Animal Type</th>
+                <th>Animal Name</th>
+                <th>Animal Info</th>
+                <th>Delete?</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+
+        </tbody>
+    </table>
+
+
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>

@@ -36,32 +36,36 @@ async function getAnimals(event) {
     if(response.ok) {
         response.json()
             .then(data => {
-                const typeWrapper = document.querySelector('.type-wrapper');
-                const nameWrapper = document.querySelector('.name-wrapper');
-                const infoWrapper = document.querySelector('.info-wrapper');
-                const deleteWrapper = document.querySelector('.delete-wrapper');
+                const tableBody = document.querySelector('.table-body')
 
                 data.forEach(animal => {
-                    const typeHeading = document.createElement('h3');
-                    const nameHeading = document.createElement('h3');
-                    const infoHeading = document.createElement('h3');
+                    const tableWrapper = document.createElement('tr');
+                    const typeHeading = document.createElement('td');
+                    const nameHeading = document.createElement('td');
+                    const infoHeading = document.createElement('td');
+                    const deleteHeading = document.createElement('td');
 
-                    const deleteHeading = document.createElement('i');
-                    deleteHeading.className = "fas fa-trash-alt";
-                    deleteHeading.setAttribute('id', `${animal.id}`)
+                    const deleteIcon = document.createElement('i');
+                    deleteIcon.className = "fas fa-trash-alt";
+                    deleteIcon.setAttribute('id', `${animal.id}`)
+
+                    deleteHeading.append(deleteIcon)
 
                     typeHeading.textContent = animal.animal_type;
                     nameHeading.textContent = animal.name;
                     infoHeading.textContent = animal.about;
 
-                    typeWrapper.append(typeHeading);
-                    nameWrapper.append(nameHeading);
-                    infoWrapper.append(infoHeading);
-                    deleteWrapper.append(deleteHeading);
+                    tableWrapper.append(typeHeading);
+                    tableWrapper.append(nameHeading);
+                    tableWrapper.append(infoHeading);
+                    tableWrapper.append(deleteHeading);
+
+                    tableBody.append(tableWrapper)
                 })
 
                 async function deleteAnimal(e) {
                     const id = e.target.getAttribute('id');
+                    console.log(e.target)
 
                     const response = await fetch(`/api/animals/${id}`, {
                         method: 'DELETE',

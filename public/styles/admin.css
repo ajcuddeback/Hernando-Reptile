@@ -1,0 +1,39 @@
+table {
+    width: 60%;
+    margin: 2rem auto;
+}
+
+th {
+    border: 2px solid black;
+}
+
+td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.fa-trash-alt {
+    color: red;
+    cursor: pointer;
+    width: 2rem;
+    height: 1rem;
+    font-size: 1.5rem;
+}
+
+.file-uploader {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.file-uploader form img {
+    width: 18rem;
+}
+
+#submit, 
+.logout {
+    cursor: pointer;
+    padding: .5rem 1rem
+}
