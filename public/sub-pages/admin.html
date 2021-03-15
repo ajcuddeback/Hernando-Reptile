@@ -10,11 +10,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
     <header>
-        <h2>Welcome back Jesse</h2>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="/"><img src="../images/logo.png" alt="Hernando Reptile Logo"></a>
+        </div>
+        <!-- Navigation -->
+        <nav>
+            <label for="toggle" class="menu-label">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <div class="menu">
+                <a href="/donate">Donate</a>
+                <a href="/adoptables">Adoptables</a>
+                <a href="/volunteer">Volunteer</a>
+                <a href="/contact-us">Contact Us</a>
+                <a href="/pit-microchipping-1">PIT Microchiping</a>
+                <a href="/team">Meet the Team</a>
+                <button class="button logout">Logout</button>
+            </div>
+        </nav>
     </header>
 
     <div class="current-animals">
@@ -74,6 +92,7 @@
     </script>
     <script src="../scripts/upload-file.js"></script>
     <script src="../scripts/add-animal.js"></script>
+    <script src="../scripts/logout.js"></script>
 </body>
 
 </html>

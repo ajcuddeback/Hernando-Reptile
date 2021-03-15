@@ -38,7 +38,7 @@ router.get('/volunteer', (req, res) => {
 router.get('/admin', withAuth,  (req, res) => {
     res.sendFile(path.join(__dirname, '../../public/sub-pages/admin.html'))
 });
-router.get('/signin', (req, res) => {
+router.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, '../../public/sub-pages/signin.html'))
 });
 module.exports = router;
