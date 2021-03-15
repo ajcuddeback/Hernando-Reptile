@@ -1,3 +1,6 @@
+
+
+
 const modal = document.querySelector('.modal');
 const fullImage = document.querySelector('.full-img');
 const captionTitle = document.querySelector('.caption-title');
@@ -14,8 +17,6 @@ adoptableImage.forEach(reptile => {
         const dataDesc = e.target.getAttribute('data-desc');
         captionTitle.textContent = dataTitle;
         captionDesc.textContent = dataDesc;
-        console.log(captionTitle);
-        console.log(dataDesc)
     });
 });
 
