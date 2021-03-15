@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS Hernando_Reptile;
-CREATE DATABASE Hernando_Reptile;
+-- DROP DATABASE IF EXISTS Hernando_Reptile;
+-- CREATE DATABASE Hernando_Reptile;
