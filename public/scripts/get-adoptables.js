@@ -58,6 +58,40 @@ async function getAdoptables(e) {
 
                         })
                     })
+                } else {
+                    const adoptableWrapper = document.querySelector('.adopt-images-wrapper');
+                    const wrapperDiv = document.createElement('div');
+                    const adoptableImage = document.createElement('img');
+
+                    wrapperDiv.className = 'adoptablesgallery';
+                    adoptableImage.className = 'adoptable-image';
+
+                    adoptableImage.setAttribute('width', '200px');
+                    adoptableImage.setAttribute('height', '200px');
+                    adoptableImage.setAttribute('src', `../images/placeholder-adopt.jpg`);
+                    adoptableImage.setAttribute('data-image', `../images/placeholder-adopt.jpg`);
+                    adoptableImage.setAttribute('data-title', `No Adoptables Here!`);
+                    adoptableImage.setAttribute('data-desc', `Visit back soon, we are always keeping up to date on our animals!`);
+
+                    wrapperDiv.append(adoptableImage);
+                    adoptableWrapper.append(wrapperDiv);
+
+
+                    const modal = document.querySelector('.modal');
+                    const fullImage = document.querySelector('.full-img');
+                    const captionTitle = document.querySelector('.caption-title');
+                    const captionDesc = document.querySelector('.caption-desc');
+
+                    adoptableImage.addEventListener('click', (e) => {
+                        modal.classList.add('open');
+                        fullImage.classList.add('open');
+                        const originalSrc = adoptableImage.getAttribute('data-image');
+                        fullImage.src = originalSrc;
+                        const dataTitle = e.target.getAttribute('data-title');
+                        const dataDesc = e.target.getAttribute('data-desc');
+                        captionTitle.textContent = dataTitle;
+                        captionDesc.textContent = dataDesc;
+                    })
                 }
 
             })
