@@ -803,14 +803,12 @@ main {
 }
 
 .adopt-form,
-.volunteer-signup,
 .micro-signup {
   display: flex;
   margin: 2rem 0rem;
   padding-top: 1rem;
 }
-.left-adopt-content,
-.signup-info {
+.left-adopt-content {
   width: 50%;
 }
 .left-adopt-content p,
@@ -938,9 +936,6 @@ main {
 }
 .micro-content p {
   margin-bottom: 1rem;
-}
-.micro-signup-content {
-  width: 40%;
 }
 
 /* End of micro page styles */
@@ -1646,4 +1641,7 @@ footer {
   .donation-form {
     width: 15rem;
   }
+}
+#no-padd {
+  margin-bottom: 2rem;
 }
